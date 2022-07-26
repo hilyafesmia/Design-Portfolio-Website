@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 export default function WorkCard({slug, img, duration, title, scope}) {
     return (
         <Link href={`/work/${slug}`}>
-            <div class="card-item">
+            <div className="card-item">
                 <Image 
                     width={800}
                     height={600}
@@ -13,7 +13,7 @@ export default function WorkCard({slug, img, duration, title, scope}) {
                     src={`/${img}`}
                 />
                 <hr/>
-                <div class="scope-duration">
+                <div className="scope-duration">
                     <p>{scope}</p>
                     <p>{duration}</p>
                 </div>

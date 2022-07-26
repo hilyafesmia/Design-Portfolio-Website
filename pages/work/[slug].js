@@ -30,12 +30,12 @@ export async function getStaticProps({ params: { slug } }) {
 export default function PostPage({ frontmatter, content }) {
   return (
     <>
-    <div class="parallax img height">
+    <div className="parallax img height">
     </div>
-    <div className='prose mx-auto margin-web'>
+    <div classNameName='prose mx-auto margin-web'>
       <h1>{frontmatter.title}</h1>
       <h3>{frontmatter.desc}</h3>
-      <div class="cards">
+      <div className="cards">
         <ShortInfo
           type={'Company'}
           content={frontmatter.company}
