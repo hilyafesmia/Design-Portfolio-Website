@@ -32,7 +32,7 @@ export default function PostPage({ frontmatter, content }) {
     <>
     <div className="parallax img height">
     </div>
-    <div classNameName='prose mx-auto margin-web'>
+    <div className='prose mx-auto margin-web'>
       <h1>{frontmatter.title}</h1>
       <h3>{frontmatter.desc}</h3>
       <div className="cards">
