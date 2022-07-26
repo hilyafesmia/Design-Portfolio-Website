@@ -1,26 +1,125 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Mono';
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+h1 {
+    font-size: 4em;
+    font-weight: bold;
 }
 
-* {
-  box-sizing: border-box;
+h2 {
+    font-size: 3em;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+.margin-web {
+    margin-top: 4rem;
+}
+
+.header-outer {
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-background {
+    backdrop-filter: blur(1rem);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.header-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.cards {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem 1rem;
+}
+
+.works {
+    padding: 5rem 4rem;
+    background-color:rgb(231, 231, 231);
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+hr { 
+    margin-top: 0.5rem;
+    display: block; 
+    overflow: hidden; 
+    border-style: inset; 
+    border-width: 2px;
+}
+
+
+.card-item {
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 0;
+}
+
+.hero {
+    background-color:rgb(205, 234, 104);
+    height: 80vh;
+    padding: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.scope-duration {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.parallax {
+    /* The image used */
+    /* background-image: url('/images/000022970032.jpg'); */
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  body {
-    color: white;
-    background: black;
+
+.short-info {
+    width: 50%;
   }
+
+.img {
+    /* The image used */
+    background-image: url('/images/000022970032.jpg');
+}
+
+.height {
+    /* The image used */
+    height: 50vh;
 }
