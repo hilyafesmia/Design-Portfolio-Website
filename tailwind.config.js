@@ -13,14 +13,11 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            h1: {
-              fontFamily: 'Roboto Mono'
-            },
-            h2: {
-              fontFamily: 'Roboto Mono'
-            },
-            h3: {
-              fontFamily: 'Roboto Mono'
+            padding: "2rem",
+            maxWidth: "800px",
+            margin: '4rem auto',
+            "h1, h2, h3, h4": {
+              fontFamily: "Roboto Mono"
             },
           }
         }

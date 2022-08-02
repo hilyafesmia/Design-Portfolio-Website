@@ -2,6 +2,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import md from 'markdown-it';
 import ShortInfo from '../../components/shortInfo';
+import Image from 'next/image'
 
 export async function getStaticPaths() {
   const files = fs.readdirSync('posts');
@@ -28,14 +29,19 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 export default function PostPage({ frontmatter, content }) {
+  const imgBackground = {
+    backgroundImage: "url(/" + `${frontmatter.previewImg}` + ")"
+  }
   return (
     <>
-    <div className="parallax img height">
-    </div>
-    <div className='prose mx-auto margin-web'>
+    <div 
+          style={imgBackground}
+          className="parallax height"
+    />
+    <div className='prose'>
       <h1>{frontmatter.title}</h1>
       <h3>{frontmatter.desc}</h3>
-      <div className="cards">
+      <div className="shortinfos">
         <ShortInfo
           type={'Company'}
           content={frontmatter.company}

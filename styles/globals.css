@@ -7,12 +7,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 h3 {
@@ -23,15 +23,12 @@ h4 {
     font-size: 1em;
 }
 
-.margin-web {
-    margin-top: 4rem;
-}
-
 .header-outer {
     padding: 2rem 4rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-background {
@@ -44,7 +41,43 @@ h4 {
 
 .header-menu {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+}
+
+.header-menu a {
+    font-family: 'Roboto Mono';
+    font-size: 1em;
+}
+
+.header-menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.header-menu a:hover::after {
+    width: 100%;
+}
+
+/* .header-menu a:hover {
+    border-bottom: 1px solid black;
+} */
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
 .cards {
@@ -56,13 +89,22 @@ h4 {
     gap: 3rem 1rem;
 }
 
+.shortinfos {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
 .works {
     padding: 5rem 4rem;
-    background-color:rgb(231, 231, 231);
+    background-color:white;
     border-radius: 2rem 2rem 0 0;
     display: flex;
     flex-direction: column;
-    row-gap: 4rem;
+    row-gap: 2rem;
 }
 
 hr { 
@@ -75,7 +117,8 @@ hr {
 
 
 .card-item {
-    width: 28vw;
+    width: 48%;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem 0;
@@ -110,8 +153,8 @@ hr {
     background-size: cover;
   }
 
-.short-info {
-    width: 50%;
+.shortinfo-item {
+    width: 160px;
   }
 
 .img {
@@ -120,6 +163,108 @@ hr {
 }
 
 .height {
-    /* The image used */
-    height: 50vh;
+    height: 75vh;
+    padding-top: 6rem;
+}
+
+.aboutus {
+    width: 400px;
+}
+
+.margin-web {
+    padding: 8rem 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.animate-border {
+    transition: all .5s ease;
+    overflow: hidden;
+}
+
+.animate-border:hover {
+    border: 1px solid transparent;
+    border-radius: 6rem;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    .height {
+        height: 40vh;
+    }
+
+    .hero {
+        padding: 2rem;
+    }
+
+    .works {
+        padding: 2rem;
+    }
+
+    .bar.active {
+        background-color: white;
+        transition: all 0.5s ease;
+    }
+
+    .header-outer {
+        padding: 2rem;
+    }
+
+    .header-background {
+        transition: all 0.5s ease;
+    }
+
+    .header-background.active {
+        background-color: black;
+        color: white;
+    }
+
+    .header-menu {
+        /* display: none;
+        transition: all 0.3s ease; */
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: all 0.5s ease;
+        color: white;
+        gap: 2rem 0;
+        padding: 2rem;
+        height: 100vh;
+    }
+
+    .header-menu.active {
+        top: 6rem;
+        /* position: fixed;
+        left: 0;
+        top: 6rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: all 0.3s ease; */
+
+    }
+
+    .hamburger {
+        display: block;
+    }
 }

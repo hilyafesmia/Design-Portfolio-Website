@@ -6,12 +6,14 @@ export default function WorkCard({slug, img, duration, title, scope}) {
     return (
         <Link href={`/work/${slug}`}>
             <div className="card-item">
-                <Image 
-                    width={800}
-                    height={600}
-                    alt={title}
-                    src={`/${img}`}
-                />
+                <div className="animate-border">
+                    <Image 
+                        width={1600}
+                        height={900}
+                        alt={title}
+                        src={`/${img}`}
+                    />
+                </div>
                 <hr/>
                 <div className="scope-duration">
                     <p>{scope}</p>

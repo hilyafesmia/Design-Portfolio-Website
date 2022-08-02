@@ -1,13 +1,13 @@
 ---
-title: 'Empty & Error States'
-metaTitle: 'Empty & Error States'
-desc: 'Based on Dekoruma’s website analytics, a user is more likely to close a website when shown a  blank page. To minimize the bounce rate in our website, we decided to create empty, loading and error states.'
-metaDesc: 'Illustrations that inform users'
-previewImg: images/000022970032.jpg
-company: 'HomeCredit Indonesia'
-role: 'Product Designer, Front-end Developer'
-scope: 'Desktop Web'
-duration: 'Feb-Mar 2019'
+title: 'Home and Event Page Revamp'
+metaTitle: 'Home and Event Page Revamp'
+desc: 'A'
+metaDesc: 'A'
+previewImg: images/SejutaCita/cover.jpg
+company: 'SejutaCita'
+role: 'Product Designer'
+scope: 'Mobile App'
+duration: 'Feb-April 2020'
 ---
 
 ## Problem Statement

@@ -1,7 +1,7 @@
 
 export default function shortInfo({type, content}) {
     return (
-        <div className="short-info">
+        <div className="shortinfo-item">
             <h4>{type}</h4>
             <p>{content}</p>
         </div>
