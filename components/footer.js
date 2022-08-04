@@ -1,5 +1,7 @@
 export default function Footer() {
     return (
-        <p>Ceritanya ini footer</p>
+    <div className="footer">
+        <h4>Made with love 💖 blood🩸 and tears 💦</h4>
+    </div>
     )
 }

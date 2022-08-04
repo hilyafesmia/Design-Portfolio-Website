@@ -30,7 +30,7 @@ export default function AboutPage() {
                 <p>
                     I hold a BSc degree in Computer Science from Universitas Indonesia. I managed to land several internships during my uni days as a UI/UX designer and a Front-end Web Developer. I live in Jakarta, Indonesia, but I would love to travel the world if I get the opportunity.</p>
                 <br/>
-                <p>Also, you can check my resume<Link href="/Resume-Hilya-Auli-Fesmia-2022.pdf">here!</Link> (don't worry, this won't auto-download🤞🏼)</p>
+                <p>Also, you can check my resume<Link href="/Resume-Hilya-Auli-Fesmia-2022.pdf">here!</Link> (don&#39;t worry, this won&#39;t auto-download🤞🏼)</p>
                 <br/>
                 <div className="contact-us">
                     <h3>Get in touch</h3>

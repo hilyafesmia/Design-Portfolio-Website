@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     return (
         <>
             <Head>
-                <title>Hilya&apos;s Product Design Portfolio</title>
+                <title>Hilya&#39;s Product Design Portfolio</title>
                 <meta name="description" content="Hilya's Product Design Portfolio" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

@@ -52,8 +52,8 @@ export default function Home({ posts }) {
     <div className="home">
       <div className="hero">
         <div className="intro-card">
-          <h1>Hi, I'm Hilya, a digital product designer based in Jakarta, Indonesia</h1>
-          <h2>I'm interested in digital product design and web development</h2>
+          <h1>Hi, I&#39;m Hilya, a digital product designer based in Jakarta, Indonesia</h1>
+          <h2>I&#39;m interested in digital product design and web development</h2>
         </div>
       </div>
       <div id="outer">
