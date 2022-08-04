@@ -17,7 +17,7 @@ export async function getStaticProps() {
 export default function WorksPage({ posts }) {
     return (
         <div className="margin-web column">
-            <h2>Works</h2>
+            <h1>Works</h1>
             <div className="cards">
             {posts.map(({slug, frontmatter}, index) => (
                 <WorkCard

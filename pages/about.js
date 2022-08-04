@@ -11,7 +11,7 @@ export default function AboutPage() {
                 height="400px"
             />
             <div className="about-us">
-                <h2>About Me</h2>
+                <h1>About Me</h1>
                 <br/>
                 <p>Hello, world!</p>
                 <br/>
@@ -28,13 +28,13 @@ export default function AboutPage() {
                 </p>
                 <br/>
                 <p>
-                    I hold a BSc degree in Computer Science from Universitas Indonesia. I managed to land several internships during my uni days as a UI/UX designer and a Front-end Web Developer. I live in Jakarta, Indonesia, but I would love to travel the world if I get the opportunity.</p>
+                    I hold a BSc degree in Computer Science from Universitas Indonesia. I managed to land several internships during my uni days as a UI/UX designer and a front-end web developer. I live in Jakarta, Indonesia, but I would love to travel the world 🌍 if I get the opportunity.</p>
                 <br/>
                 <p>Also, you can check my resume<Link href="/Resume-Hilya-Auli-Fesmia-2022.pdf">here!</Link> (don&#39;t worry, this won&#39;t auto-download🤞🏼)</p>
                 <br/>
                 <div className="contact-us">
                     <h3>Get in touch</h3>
-                    <Link href="mailto:hilyafesmia@gmail.com">hilyafesmia@gmail.com</Link>
+                    <Link href="mailto:contact@hilya.design">contact@hilya.design</Link>
                     <Link href="https://wa.me/6281296697907">+62 812-9669-7907</Link>
                     <Link href="https://www.linkedin.com/in/hilyafesmia/">Hilya Auli Fesmia</Link>
                 </div>

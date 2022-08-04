@@ -19,7 +19,7 @@ export default function WorkCard({slug, img, duration, title, scope}) {
                     <p>{scope}</p>
                     <p>{duration}</p>
                 </div>
-                <h3>{title}</h3>
+                <h2>{title}</h2>
             </div>
           </Link>
     )
