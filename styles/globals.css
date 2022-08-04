@@ -49,22 +49,24 @@ h4 {
     font-size: 1em;
 }
 
-.header-menu a::after {
+.about-us a {
+    display: inline-block;
+    margin: 0 4px;
+    color: darkcyan;
+}
+
+a::after {
     content: '';
     display: block;
     width: 0;
     height: 2px;
     background: #000;
-    transition: width .3s;
+    transition: width 0.3s;
 }
 
-.header-menu a:hover::after {
+a:hover::after {
     width: 100%;
 }
-
-/* .header-menu a:hover {
-    border-bottom: 1px solid black;
-} */
 
 .hamburger {
     display: none;
@@ -101,7 +103,6 @@ h4 {
 .works {
     padding: 5rem 4rem;
     background-color:white;
-    border-radius: 2rem 2rem 0 0;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
@@ -118,18 +119,17 @@ hr {
 
 .card-item {
     width: 48%;
-    min-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem 0;
 }
 
 .hero {
-    background-color:rgb(205, 234, 104);
-    height: 80vh;
+    height: 90vh;
     padding: 4rem;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -140,13 +140,7 @@ hr {
 }
 
 .parallax {
-    /* The image used */
-    /* background-image: url('/images/000022970032.jpg'); */
-  
-    /* Full height */
-    height: 100%; 
-  
-    /* Create the parallax scrolling effect */
+    height: 75vh; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,37 +156,104 @@ hr {
     background-image: url('/images/000022970032.jpg');
 }
 
-.height {
-    height: 75vh;
-    padding-top: 6rem;
+.about-us {
+    width: 400px;
 }
 
-.aboutus {
-    width: 400px;
+.contact-us {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
 }
 
 .margin-web {
     padding: 8rem 2rem;
     margin: auto;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    column-gap: 2rem;
+    gap: 2rem;
+}
+
+.column {
+    flex-direction: column;
 }
 
 .animate-border {
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     overflow: hidden;
 }
 
 .animate-border:hover {
     border: 1px solid transparent;
-    border-radius: 6rem;
+    border-radius: 8rem;
+}
+
+.activeImg::after {
+    content: '';
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(255,255,255,0.9);
+    z-index: 1;
+}
+
+.home {
+    background-color:rgb(205, 234, 104);
+}
+
+.intro-card {
+    background-color: white;
+    width: 50%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 1rem 1rem 0px rgb(0, 77, 67);
+}
+
+#outer {
+    overflow: hidden;
+}
+
+#outer div {
+    display: inline-block;
+    padding: 1rem 0;
+    background-color: rgb(0, 77, 67);
+}
+
+#loop {
+    white-space: nowrap;
+    animation: loop-anim 10s linear infinite;
+}
+
+#content {
+    font-size: 10rem;
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+    color: white;
+}
+
+@keyframes loop-anim {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -100%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+
+    .card-item {
+        width: 100%;
+    }
+    
     h1 {
         font-size: 2em;
         font-weight: bold;
@@ -201,13 +262,10 @@ hr {
     h2 {
         font-size: 1.5em;
     }
-    
-    .height {
-        height: 40vh;
-    }
 
     .hero {
-        padding: 2rem;
+        padding: 6rem 2rem;
+        height: 100%;
     }
 
     .works {
@@ -220,11 +278,12 @@ hr {
     }
 
     .header-outer {
-        padding: 2rem;
+        padding: 0 2rem;
+        height: 6rem;
     }
 
     .header-background {
-        transition: all 0.5s ease;
+        transition: all 0.3s ease;
     }
 
     .header-background.active {
@@ -233,10 +292,8 @@ hr {
     }
 
     .header-menu {
-        /* display: none;
-        transition: all 0.3s ease; */
         position: fixed;
-        top: -100vh;
+        top: -50vh;
         left: 0;
         flex-direction: column;
         background-color: black;
@@ -245,26 +302,29 @@ hr {
         transition: all 0.5s ease;
         color: white;
         gap: 2rem 0;
-        padding: 2rem;
-        height: 100vh;
+        padding-bottom: 2rem;
     }
 
     .header-menu.active {
         top: 6rem;
-        /* position: fixed;
-        left: 0;
-        top: 6rem;
-        display: flex;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: all 0.3s ease; */
-
     }
 
     .hamburger {
         display: block;
     }
+
+    .intro-card {
+        padding: 2rem;
+        width: 100%;
+        box-shadow: 0.5rem 0.5rem 0px rgb(0, 77, 67);
+    }
+
+    #content {
+        font-size: 6rem;
+    }
+
+    .parallax {
+        height: 50vh; 
+    }
+
 }

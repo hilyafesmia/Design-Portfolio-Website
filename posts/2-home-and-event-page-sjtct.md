@@ -1,9 +1,9 @@
 ---
 title: 'Home and Event Page Revamp'
-metaTitle: 'Home and Event Page Revamp'
+metaTitle: 'Home and Event Page'
 desc: 'A'
 metaDesc: 'A'
-previewImg: images/SejutaCita/cover.jpg
+previewImg: images/SejutaCita/Cover.jpg
 company: 'SejutaCita'
 role: 'Product Designer'
 scope: 'Mobile App'

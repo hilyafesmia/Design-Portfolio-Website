@@ -19,6 +19,11 @@ module.exports = {
             "h1, h2, h3, h4": {
               fontFamily: "Roboto Mono"
             },
+            img: {
+              position: "relative",
+              cursor: "zoom-in",
+              transition: "all 0.5s ease",
+            },
           }
         }
       }

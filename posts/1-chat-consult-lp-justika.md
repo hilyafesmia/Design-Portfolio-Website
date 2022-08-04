@@ -1,11 +1,6 @@
 ---
-# title: 'Chat Consultation Landing Page Revamp'
-# metaTitle: 'Chat Consultation Landing Page Revamp'
-# desc: 'Based on Justika's website analytics, the step of sending the problem description in the chatroom has the lowest conversion rate in the whole chat consultation process. To fix this, we decided to incorporate usability heuristic aspects in the chatroom.'
-# metaDesc: 'aaaaa'
-
-title: "Chat Consultation Landing Page Revamp"
-metaTitle: "Chat Consultation Landing Page Revamp"
+title: "Chat Consultation Landing Page"
+metaTitle: "Chat Consultation Landing Page"
 desc: "Based on Justika's website analytics, the Sending Problem Description step in the chatroom has the lowest conversion rate in the whole chat consultation process. To fix this, we decided to incorporate usability heuristic aspects in the chatroom."
 metaDesc: "A data warehouse accessible for all stakeholders"
 previewImg: "images/Justika/Cover.jpg"

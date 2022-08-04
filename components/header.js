@@ -6,15 +6,22 @@ export default function Header() {
         const hamburger = document.querySelector(".hamburger");
         const headerMenu = document.querySelector(".header-menu");    
         const headerBg = document.querySelector(".header-background");    
-        const bar = document.querySelector(".bar");    
+        const link = document.querySelectorAll(".header-menu a");
+        const bar = document.querySelectorAll(".bar");
 
-        hamburger.addEventListener("click", mobileMenu);
+        hamburger.addEventListener("click", openMenu);
+        link.forEach(n => n.addEventListener("click", closeMenu));
 
-        function mobileMenu() {
-            hamburger.classList.toggle("active");
+        function closeMenu() {
+            headerMenu.classList.remove("active");
+            headerBg.classList.remove("active");
+            bar.forEach(n => n.classList.remove("active"));
+        }
+
+        function openMenu() {
             headerMenu.classList.toggle("active");
             headerBg.classList.toggle("active");
-            bar.classList.toggle("active");
+            bar.forEach(n => n.classList.toggle("active"));
         }
     }
 
@@ -31,9 +38,9 @@ export default function Header() {
                     <Link href='/hobbies'>Hobbies</Link>
                 </div>
                 <div className="hamburger">
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                    <span className="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </div>
         </nav>
