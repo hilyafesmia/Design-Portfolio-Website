@@ -44,9 +44,9 @@ export default function Header() {
                     <Link href='/hobbies'>Hobbies</Link>
                 </div>
                 <div className="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
                 </div>
             </div>
         </nav>
