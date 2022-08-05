@@ -17,6 +17,7 @@ How might we enable stakeholders to access data easily?
 
 
 ## Goal
+
 Help data analyst
 - Search data definition
 - Retrieve data definition

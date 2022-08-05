@@ -3,16 +3,17 @@ import Image from 'next/image';
 import { allPost } from './index';
 import fs from 'fs';
 import WorkCard from '../components/workCard';
+import retrievePosts from '../utils/retrievePosts';
 
 export async function getStaticProps() {
-    const files = fs.readdirSync('posts');
-    const posts = allPost(files);
+    const files = fs.readdirSync('posts/work');
+    const posts = retrievePosts(files, 'work');
     return {
       props: {
         posts
       }
     };
-  }
+}
 
 export default function WorksPage({ posts }) {
     return (

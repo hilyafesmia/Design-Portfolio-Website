@@ -184,8 +184,17 @@ hr {
 }
 
 .animate-border {
+    display: flex;
     transition: all 0.5s ease;
     overflow: hidden;
+}
+
+.hobby-border {
+    transition: all 1s ease !important;
+}
+
+.hobby-border:hover {
+    border-radius: 100% !important;
 }
 
 .animate-border:hover {

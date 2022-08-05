@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image'
 
-export default function WorkCard({slug, img, duration, title, scope}) {
+export default function HobbyCard({slug, img, title, type}) {
     return (
-        <Link href={`/work/${slug}`}>
+        <Link href={`/hobby/${slug}`}>
             <div className="card-item">
-                <div className="animate-border">
+                <div className="animate-border hobby-border">
                     <Image 
                         width={1600}
                         height={900}
@@ -14,10 +14,7 @@ export default function WorkCard({slug, img, duration, title, scope}) {
                     />
                 </div>
                 <hr/>
-                <div className="scope-duration">
-                    <p>{scope}</p>
-                    <p>{duration}</p>
-                </div>
+                <p>{type}</p>
                 <h2>{title}</h2>
             </div>
           </Link>

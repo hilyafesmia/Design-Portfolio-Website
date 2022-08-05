@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react";
 import { clickHandler, scrollhandler } from "/utils/eventHandler";
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync('posts/work');
+  const files = fs.readdirSync('posts/hobby');
   const paths = files.map((fileName) => ({
     params: {
       slug: fileName.replace('.md', ''),
@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const fileName = fs.readFileSync(`posts/work/${slug}.md`, 'utf-8');
+  const fileName = fs.readFileSync(`posts/hobby/${slug}.md`, 'utf-8');
   const { data: frontmatter, content } = matter(fileName);
   return {
     props: {
@@ -29,7 +29,6 @@ export async function getStaticProps({ params: { slug } }) {
     },
   };
 }
-
 
 export default function PostPage({ frontmatter, content }) {
   const imgRef = useRef(null);
@@ -49,31 +48,8 @@ export default function PostPage({ frontmatter, content }) {
 
   return (
     <>
-    <div 
-          style={imgBackground}
-          className="parallax"
-    />
     <div className='prose'>
       <h1>{frontmatter.title}</h1>
-      <h3>{frontmatter.desc}</h3>
-      <div className="shortinfos">
-        <ShortInfo
-          type={'Company'}
-          content={frontmatter.company}
-        />
-        <ShortInfo
-          type={'Role'}
-          content={frontmatter.role}
-        />
-        <ShortInfo
-        type={'Scope'}
-        content={frontmatter.scope}
-      />
-      <ShortInfo
-        type={'Duration'}
-        content={frontmatter.duration}
-      />
-      </div>
       <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
     </div>
     </>

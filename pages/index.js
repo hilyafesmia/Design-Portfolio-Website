@@ -1,13 +1,13 @@
 import styles from '../styles/Home.module.css'
 import WorkCard from '../components/workCard';
 import fs from 'fs';
-import matter from 'gray-matter';
 import Link from 'next/link';
+import retrievePosts from '../utils/retrievePosts';
 import { useEffect } from 'react';
 
 export async function getStaticProps() {
-  const files = fs.readdirSync('posts');
-  const posts = allPost(files);
+  const files = fs.readdirSync('posts/work');
+  const posts = retrievePosts(files, 'work');
   return {
     props: {
       posts
@@ -15,20 +15,20 @@ export async function getStaticProps() {
   };
 }
 
-export function allPost(files) {
-  const allPost = files.map((fileName) => {
+// export function allPost(files) {
+//   const allPost = files.map((fileName) => {
 
-    const slug = fileName.replace('.md','');
-    const readFile = fs.readFileSync(`posts/${fileName}`, 'utf-8');
-    const { data: frontmatter } = matter(readFile);
+//     const slug = fileName.replace('.md','');
+//     const readFile = fs.readFileSync(`posts/${fileName}`, 'utf-8');
+//     const { data: frontmatter } = matter(readFile);
   
-    return {
-      slug,
-      frontmatter
-    };
-  })
-  return allPost;
-}
+//     return {
+//       slug,
+//       frontmatter
+//     };
+//   })
+//   return allPost;
+// }
 
 export default function Home({ posts }) {
 
