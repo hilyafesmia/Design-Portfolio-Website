@@ -50,9 +50,9 @@ We interviewed six students about things related to their plan-making habits but
 
 - In a peer group, at least one person is responsible for plan making. The rest of the group will follow the plan to be together the whole semester.
 - Students always have more than one plan. If things go wrong (e.g., the desired class has no quota left), they can switch to the second plan or sometimes a third plan if they’re unlucky.
-Outside their studies, users also have routine non-academic activities (e.g., weekly organization meetings)
+- Other than classes, users also have non-academic routines (e.g., weekly organization meetings)
 - Students use Google Sheet as their primary platform to make a class plan because it is accessible from the phone.
-- All respondents don’t know a repository of their previously made plan exists. They think SusunJadwal can only save the last made plan, so they screenshot the plan and keep it manually on their laptop.
+- All respondents don’t know a repository of their previously made plan exists. They think SusunJadwal can only save the last-made plan, so they screenshot the plan and keep it manually on their laptop.
 
 
 ## Design

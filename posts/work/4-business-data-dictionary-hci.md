@@ -67,13 +67,21 @@ SF Pro Display is a free, open-source Apple font. I chose this font family becau
 Above is SLOVNEEK's UI Kit. It is based on but is not limited to Google's Material Design, Apple’s Human Interface Guideline, and our design principles.
 
 ### Information Structure
+
+![IA](/images/HCI/IA.jpg "IA")
+
 I organized the PBI received and drew a site map showing user flow.
 
 ### User Flow
-I used the user flow to help structure the screens I needed to sketch our
-prototype. In this case, Helmy’s goal is to create a data definition “Account Payable.”
+
+![Flow](/images/HCI/Flow.jpg "Flow")
+
+I used the user flow to help structure the screens I needed to sketch our prototype. In this case, Helmy’s goal is to create a data definition “Account Payable.”
 
 ### Wireframe
+
+![Wireframe](/images/HCI/Wireframe.jpg "Wireframe")
+
 After the information structure was approved, I created a wireframe of the site to
 show the general layouts.
 

@@ -11,24 +11,9 @@ export async function getStaticProps() {
   return {
     props: {
       posts
-    }
+    },
   };
 }
-
-// export function allPost(files) {
-//   const allPost = files.map((fileName) => {
-
-//     const slug = fileName.replace('.md','');
-//     const readFile = fs.readFileSync(`posts/${fileName}`, 'utf-8');
-//     const { data: frontmatter } = matter(readFile);
-  
-//     return {
-//       slug,
-//       frontmatter
-//     };
-//   })
-//   return allPost;
-// }
 
 export default function Home({ posts }) {
 

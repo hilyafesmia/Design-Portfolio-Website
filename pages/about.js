@@ -34,7 +34,7 @@ export default function AboutPage() {
                 <br/>
                 <div className="contact-us">
                     <h3>Get in touch</h3>
-                    <Link href="mailto:contact@hilya.design">contact@hilya.design</Link>
+                    <Link href="mailto:hello@hilya.design">hello@hilya.design</Link>
                     <Link href="https://wa.me/6281296697907">+62 812-9669-7907</Link>
                     <Link href="https://www.linkedin.com/in/hilyafesmia/">Hilya Auli Fesmia</Link>
                 </div>
