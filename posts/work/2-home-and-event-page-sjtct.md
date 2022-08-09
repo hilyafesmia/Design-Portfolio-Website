@@ -23,7 +23,11 @@ Product Designer. My workflow includes creating a research plan, desk research, 
 
 ## Problem Statement
 
-SejutaCita aims to democratize education by providing students a place where they can find events to boost their CV thus helping them getting better opportunities. However, based on the data, users always stopped after either reaching the Home or Event page and didn’t continue to register for the event. We assumed that users stopped because they didn’t know what to do in the app.
+SejutaCita aims to democratize education by providing students a place where they can find events to boost their CV thus helping them getting better opportunities. **However, based on the data, users always stopped after either reaching the Home or Event page and didn’t continue to register for the event.** We assumed that users stopped because they didn’t know what to do in the app.
+
+## Process Summary
+
+![Flow](/images/SejutaCita/Flow.jpg "Flow")
 
 ## First Iteration
 

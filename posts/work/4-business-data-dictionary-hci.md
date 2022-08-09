@@ -22,6 +22,7 @@ Product Designer and Front-end Web Developer. We are working in a group of 6: 3 
 
 ## Problem Statement
 A data warehouse is an extensive collection of data from an operational database to help organizations analyze data and make decisions. It’s designed for query and analysis purposes. It is the best way to keep data accessible from your fingertip, but it’s not the best setting for mutability and collaborative work because; 
+
 1. Only data engineers have the power to make all the changes in the data warehouse and,
 2. Every department has its data warehouse. This thick layer gives the analyst a hard time retrieving and updating the data, resulting in slow analysis progress.
 
@@ -31,16 +32,30 @@ After looking into the problem, a question came up to mind:
 
 Instead of asking each other every time changes are made and spending their time on meetings that shouldn't even exist in the first place, analysts can just do all the discussions and data management in one app––SLOVNEEK.
 
+## Process Summary
+
+![Flow](/images/HCI/Flow.jpg "Flow")
+
 ## Research
 
 ### Contextual Inquiries 
-Visit the company’s HQ
-We visited the HQ to get a better look at our users and the atmosphere our users would be doing their job. We tried to get further to understand our users better by interviewing two persons, one from BI and one from Data Analyst.
+
+#### A Day In The Life
+
+We visited the HQ and stayed for a day to get a better look at our users and the atmosphere our users would be doing their job. We followed two persons, one from BI and one from Data Analyst.
 
 **Key Finding(s)**
 
-- Users are working 9 to 5, and they only work during office hours
-- Users have meetings daily
+- Respondents are working 9 to 5, and they only work during office hours
+- Respondents work from office and they use the computera at work
+- Respondents have meetings daily
+
+#### User Interview
+
+We then tried to get further to understand our users better by interviewing them.
+
+**Key Finding(s)**
+
 - A meeting is needed to make changes to a data definition. It consists of the person who requested a change, a data engineer, and a department representative whose data definition is to be changed. It can last for hours and doesn’t always result in a solution; sometimes, a second meeting is expected.
 - Analysts don’t rely on the data warehouse because it’s not regularly updated due to the limitations above
 
@@ -74,7 +89,7 @@ I organized the PBI received and drew a site map showing user flow.
 
 ### User Flow
 
-![Flow](/images/HCI/Flow.jpg "Flow")
+![FlowUser](/images/HCI/FlowUser.jpg "FlowUser")
 
 I used the user flow to help structure the screens I needed to sketch our prototype. In this case, Helmy’s goal is to create a data definition “Account Payable.”
 

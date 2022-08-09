@@ -12,7 +12,7 @@ duration: "Jan 2022"
 
 ## Overview
 Justika is a marketplace website that specifically provides consulting services and legal assistance.
-We focused on the chat consultation process. The main goal of this project is to incorporate usability heuristic aspects in the chatroom to improve the overall chat consultation experience. In the end, the number of paying users **(NPU) increased by 39%** across all channels within five days of release.
+We focused on the chat consultation process. The main goal of this project is to incorporate usability heuristic aspects in the chatroom to improve the overall chat consultation experience. As a result, the number of paying users **(NPU) increased by 39%** across all channels within five days of release.
 
 ### Users and Audience
 First-time users, specifically with divorce or business-related problems.
@@ -28,6 +28,10 @@ Justika’s chat consultation is the most used consultation method as it is the 
 We assumed that the lack of usability heuristic aspects in Justika's chatroom, such as Match Between System and Real World, Aesthetic and Minimal Design, and Help and Documentation, caused users to drop off. 
 
 From that assumption, we tried to fix this by finding what we can do to meet those three usability heuristic aspects so that users can start chat consultation without hiccups.
+
+## Process Summary
+
+![Flow](/images/Justika/Flow.jpg "Flow")
 
 ## Research
 
@@ -94,15 +98,15 @@ Initially, we made two UI alternatives: additional page before the chatroom and 
 
 
 ## Testing
-To confirm the hypotheses, we conducted task-based A/B usability testing with three persons who don't know Justika.
-
-![Task-based Usability Testing](/images/Justika/Task-basedUsabilityTesting.jpg "Task-based Usability Testing")
-
-Two respondents were shown the existing design first, then the proposed design. The last one was shown the proposed design first, then the existing design. The goal was to figure out first-time users' usage patterns and how their understanding of Justika affects their desire to start a consultation
 
 ![Card Sort](/images/Justika/CardSort.jpg "Card Sort")
 
-After that we did an open card sort to figure out how respondents group items and understand the level of importance of each piece of information provided.
+We did an open card sort with three persons who don't know Justika to figure out how respondents group items and understand the level of importance of each piece of information provided.
+
+![Task-based Usability Testing](/images/Justika/Task-basedUsabilityTesting.jpg "Task-based Usability Testing")
+
+To confirm the hypotheses, we also conducted task-based A/B concept testing. Two respondents were shown the existing design first, then the proposed design. The last one was shown the proposed design first, then the existing design. The goal was to figure out first-time users' usage patterns and how their understanding of Justika affects their desire to start a consultation
+
 
 ### Key Findings
 - Respondents who know about Justika's various services will be more likely to order Justika's chat consultation service than those who think that Justika only has a chat consultation service. By knowing that Justika has a lot to offer, they know they can solve their problem to the very end, not just until the chat consultation ends.

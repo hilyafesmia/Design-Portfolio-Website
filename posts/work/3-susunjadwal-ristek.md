@@ -25,13 +25,22 @@ Product Designer. This group project consisted of two other product designers, s
 ## Problem Statement
 Academic registration is an activity where students choose classes they will take next semester. When planning their classes, students always have their considerations, including but not limited to taking the same classes as their peer group or avoiding morning classes at all costs. Because of this, students began to devise ways to prepare their class plans.
 
-SusunJadwal was launched back in 2015 to help students prepare their class plans. The students received it well after its first launch. However, the enthusiasm didn’t stay for long; they stopped using it after the second or third academic registration. We assumed they left because it lacked the functionalities they needed when planning their studies.
+SusunJadwal was launched back in 2015 to help students prepare their class plans. The students received it well after its first launch. 
+
+**However, the enthusiasm didn’t stay for long; they stopped using it after the second or third academic registration.**
+
+We assumed they left because it lacked the functionalities they needed when planning their studies.
 
 After looking into the problem, questions came up to mind:
 > Why did students stop using SusunJadwal?
+
 > What made them switch?
+
 > How might we help students to better plan their studies?
 
+## Process Summary
+
+![Flow](/images/SusunJadwal/Flow.jpg "Flow")
 
 ## Research
 
