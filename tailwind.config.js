@@ -19,6 +19,9 @@ module.exports = {
             "h1, h2, h3, h4": {
               fontFamily: "Roboto Mono"
             },
+            "h4": {
+              color: "darkcyan"
+            },
             img: {
               position: "relative",
               cursor: "zoom-in",
