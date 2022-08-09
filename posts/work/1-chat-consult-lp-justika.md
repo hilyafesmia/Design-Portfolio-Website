@@ -12,7 +12,7 @@ duration: "Jan 2022"
 
 ## Overview
 Justika is a marketplace website that specifically provides consulting services and legal assistance.
-We focused on the chat consultation process. The main goal of this project is to incorporate usability heuristic aspects in the chatroom to improve the overall chat consultation experience.
+We focused on the chat consultation process. The main goal of this project is to incorporate usability heuristic aspects in the chatroom to improve the overall chat consultation experience. In the end, the number of paying users **(NPU) increased by 39%** across all channels within five days of release.
 
 ### Users and Audience
 First-time users, specifically with divorce or business-related problems.

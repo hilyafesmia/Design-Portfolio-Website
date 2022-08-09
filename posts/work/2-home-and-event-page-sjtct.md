@@ -13,6 +13,7 @@ duration: 'Feb-April 2020'
 ## Overview
 SejutaCita is a ticketing platform that allows students to create, share, and attend educational events to enrich their CVs. The events range from webinars, competitions, classes, scholarships, and more.
 In this project, we focused on the Register to Event flow. The main goal is to restructure the information architecture in the app to improve the overall discovery-to-register flow.
+As a result, the **Event Card CTR improved 3x** and the **Register Button CTR improved by 65%**.
 
 ### Users & Audience
 First-time users, specifically in their first year of tertiary education.

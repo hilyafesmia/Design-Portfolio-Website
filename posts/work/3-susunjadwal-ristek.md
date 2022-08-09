@@ -13,6 +13,7 @@ duration: 'Aug 2019'
 ## Overview
 Ristek Fasilkom UI is an independent organization operated by the students of the Faculty of Computer Science Universitas Indonesia (Fasilkom UI) that is aimed to cultivate students’ interests in the fields of science and technology.
 In this project, we focused on redesigning one of Ristek Fasilkom UI’s products: SusunJadwal. The main goal is to redesign the app to make it more relevant to the current use cases.
+As a result, the **number of created schedule during plan-prep periood reached an all-time high**.
 
 
 ### Users & Audience
@@ -92,7 +93,7 @@ In the Jadwal Detail Page, we created a naming feature so students can determine
 
 ![Stats](/images/SusunJadwal/Stats.jpg "Stats")
 
-### The number of active users reached an all-time high. 
+### The number of created schedule during plan-prep periood reached an all-time high
 
 We also introduced SusunJadwal to other faculties’ students.
 

@@ -228,6 +228,11 @@ hr {
     box-shadow: 1rem 1rem 0px rgb(0, 77, 67);
 }
 
+.about-intro  {
+    border: 0.25rem solid white;
+    box-shadow: 0.75rem 0.75rem 0px darkcyan;
+}
+
 #outer {
     overflow: hidden;
 }
