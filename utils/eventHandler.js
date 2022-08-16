@@ -7,7 +7,7 @@ export function clickHandler(e, imgRef){
     } else {
         const targetType = e.target.nodeName;
         if (targetType == "IMG") {
-        enlarge(e.target, imgRef);
+            enlarge(e.target, imgRef);
         }
     }
 };
