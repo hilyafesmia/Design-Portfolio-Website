@@ -3,7 +3,7 @@ export function enlarge(target, imgRef){
     const { x, y, width, height } = target.getBoundingClientRect();
     const targetX = innerWidth / 2 - x - width / 2;
     const targetY = innerHeight / 2 - y - height / 2;
-    const fitToScreen = (Math.min(innerWidth, innerHeight) * 0.8) / height;
+    const fitToScreen = (Math.min(innerWidth, innerHeight)) / Math.max(width, height);
   
     imgRef.current = target;
     imgRef.current.parentElement.classList.add("activeImg");
