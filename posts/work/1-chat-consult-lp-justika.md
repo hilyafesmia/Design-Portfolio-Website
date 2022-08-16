@@ -78,7 +78,7 @@ Users who have a divorce or business-related problem tend to skim information be
 
 ### Mapping FAQ
 
-![FAQ](/images/Justika/FAQ.jpg "FAQ")
+![InitFAQ](/images/Justika/InitFAQ.jpg "InitFAQ")
 
 We chose which questions would be put in the chatroom based on the insights from the Operational Team. We also consider adding social proof aspect to the FAQ thanks to the Marketing Team insight. All the copywritings were done by me.
 
@@ -112,10 +112,30 @@ To confirm the hypotheses, we also conducted task-based A/B concept testing. Two
 - Respondents who know about Justika's various services will be more likely to order Justika's chat consultation service than those who think that Justika only has a chat consultation service. By knowing that Justika has a lot to offer, they know they can solve their problem to the very end, not just until the chat consultation ends.
 - Respondents feel the information displayed as a chat bubble is more concise than a paragraph–even when both have the same word length–because they only want to see what they want to know.
 - The absence of case category information affects respondents' decision to try chat consultation as they want to ensure their problem is solvable before paying the consultation fee.
-- Respondents feel no difference between the two flows (pay upfront vs existing) because both flows connect them with the lawyer at the end of the process. They don't really care whether they write their problem description upfront or after payment.
 
+## Revised Design
+
+### Greetings
+
+![Intro](/images/Justika/Intro.jpg "Intro")
+
+I **added the chat consultation price** in the first chat bubble to manage their expectation. I also **changed the FAQ order** because respondents think that the cases that Justika's lawyer can handle are the most critical information they need to know before deciding to order a consultation.
+
+### Consultation Flow
+
+Respondents feel no difference between the two flows (pay upfront vs existing) because both flows connect them with the lawyer at the end of the process. They don't really care whether they write their problem description upfront or after payment. I decided to **keep the existing flow**.
+
+
+### FAQ
+
+![FAQ](/images/Justika/FAQ.jpg "FAQ")
+
+I decided to **remove one FAQ** about recurring consultation because I was focusing on the first-time user experience.
+
+I also **revised the copywriting** for each of the FAQs, especially the one about the cases that Justika's lawyers can handle. It's good to mention the specific cases, but when respondents don't find the category they think their problem falls into, they bounce immediately. To tackle this, I worded the answer around convincing them that they don't have to worry because we have so many lawyers, and their problem will eventually fall into one of their specializations.
 
 ## Result
+
 ### The number of paying users (NPU) increased by 39% across all channels within five days of release.
 
 
