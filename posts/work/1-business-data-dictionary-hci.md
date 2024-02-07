@@ -1,34 +1,38 @@
 ---
-title: 'Business Data Dictionary'
-metaTitle: 'Business Data Dictionary'
-desc: 'Data warehouse is a large collection of data derived from operational database managed by data engineers. It’s hard for data analyst to retrieve and update the data, hence resulting in slow analysis progress. From that problem, we decided to make a business data dictionary--data warehouse that is accessible for all stakeholders.'
-metaDesc: 'A data warehouse accessible for all stakeholders'
-previewImg: 'images/HCI/Cover.jpg'
-company: 'HomeCredit Indonesia'
-role: 'Product Designer, Front-end Developer'
-scope: 'Desktop Web'
-duration: 'Feb–Mar 2019'
+title: "Business Data Dictionary"
+metaTitle: "Business Data Dictionary"
+desc: "Data warehouse is a large collection of data derived from operational database managed by data engineers. It’s hard for data analyst to retrieve and update the data, hence resulting in slow analysis progress. From that problem, we decided to make a business data dictionary--data warehouse that is accessible for all stakeholders."
+metaDesc: "A data warehouse accessible for all stakeholders"
+previewImg: "images/HCI/Cover.jpg"
+company: "HomeCredit Indonesia"
+role: "Product Designer, Front-end Developer"
+scope: "Desktop Web"
+duration: "Feb–Mar 2019"
 ---
 
 ## Overview
+
 HomeCredit Indonesia is a company that provides financing services for customers who shop online and offline.
 In this project, we focused on ​​data retrieval and updates of the existing internal data warehouse. The main goal is to create a centralized data dictionary accessible to all stakeholders.
 
 ### Users & Audience
+
 Business Intelligence, Data Analyst, and Data Engineer.
 
 ### Roles and Responsibilities
+
 Product Designer and Front-end Web Developer. We are working in a group of 6: 3 other engineers, 1 PM and me. My workflow includes creating a research plan, user interview, UI design, testing, and UI development using React Redux.
 
 ## Problem Statement
-A data warehouse is an extensive collection of data from an operational database to help organizations analyze data and make decisions. It’s designed for query and analysis purposes. It is the best way to keep data accessible from your fingertip, but it’s not the best setting for mutability and collaborative work because; 
+
+A data warehouse is an extensive collection of data from an operational database to help organizations analyze data and make decisions. It’s designed for query and analysis purposes. It is the best way to keep data accessible from your fingertip, but it’s not the best setting for mutability and collaborative work because;
 
 1. Only data engineers have the power to make all the changes in the data warehouse and,
 2. Every department has its data warehouse. This thick layer gives the analyst a hard time retrieving and updating the data, resulting in slow analysis progress.
 
 After looking into the problem, a question came up to mind:
 
->Why don't we make a centralized data warehouse accessible for all stakeholders and not just data engineers?
+> Why don't we make a centralized data warehouse accessible for all stakeholders and not just data engineers?
 
 Instead of asking each other every time changes are made and spending their time on meetings that shouldn't even exist in the first place, analysts can just do all the discussions and data management in one app––SLOVNEEK.
 
@@ -38,7 +42,7 @@ Instead of asking each other every time changes are made and spending their time
 
 ## Research
 
-### Contextual Inquiries 
+### Contextual Inquiries
 
 #### A Day In The Life
 
@@ -61,7 +65,7 @@ We then tried to get further to understand our users better by interviewing them
 
 ## Design
 
-### Branding 
+### Branding
 
 **Color Palette**
 
@@ -107,10 +111,12 @@ show the general layouts.
 I used task-based usability testing and highlighted relevant issues about its usability and functionalities.
 
 ### Key Findings
+
 - Users don’t know what ‘Requests’ under Content Management is.
 - Users feel that the statistic dashboard is not needed. They prefer News as their first page.
 
 ## Result
+
 After multiple iterations and exploring the visual design elements, I produced some screens and turned them into an actual usable website.
 
 ### News Module
@@ -144,5 +150,3 @@ The change requests page shows a list of data definition change requests made by
 ![UserManagement](/images/HCI/UserManagement.jpg "UserManagement")
 
 The user management page shows a list of users. The primary purpose of this page is to view users. Besides viewing, a BI can also edit and delete users' roles.
-
-

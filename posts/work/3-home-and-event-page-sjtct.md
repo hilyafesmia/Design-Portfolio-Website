@@ -1,24 +1,27 @@
 ---
-title: 'Home and Event Page'
-metaTitle: 'Home and Event Page'
-desc: 'Based on the data, SejutaCita users always stopped after either reaching the Home or Event page and didn’t continue to register for the event. To fix this, we decided to improved said pages'
-metaDesc: ''
+title: "Home and Event Page"
+metaTitle: "Home and Event Page"
+desc: "Based on the data, SejutaCita users always stopped after either reaching the Home or Event page and didn’t continue to register for the event. To fix this, we decided to improved said pages"
+metaDesc: "Based on the data, SejutaCita users always stopped after either reaching the Home or Event page and didn’t continue to register for the event. To fix this, we decided to improved said pages"
 previewImg: images/SejutaCita/Cover.jpg
-company: 'SejutaCita'
-role: 'Product Designer'
-scope: 'Mobile App'
-duration: 'Feb-April 2020'
+company: "SejutaCita"
+role: "Product Designer"
+scope: "Mobile App"
+duration: "Feb-April 2020"
 ---
 
 ## Overview
+
 SejutaCita is a ticketing platform that allows students to create, share, and attend educational events to enrich their CVs. The events range from webinars, competitions, classes, scholarships, and more.
 In this project, we focused on the Register to Event flow. The main goal is to restructure the information architecture in the app to improve the overall discovery-to-register flow.
 As a result, the **Event Card CTR improved 3x** and the **Register Button CTR improved by 65%**.
 
 ### Users & Audience
+
 First-time users, specifically in their first year of tertiary education.
 
 ### Roles and Responsibilities
+
 Product Designer. My workflow includes creating a research plan, desk research, user interview, UI design, expert interviews, and testing. This project also involves tight collaboration between the CEO, Product Manager, Mobile Engineers, and me.
 
 ## Problem Statement
@@ -34,6 +37,7 @@ SejutaCita aims to democratize education by providing students a place where the
 ### Research
 
 #### Existing System Analysis
+
 As we assumed the users were confused, we evaluated the current flow using the 10 usability heuristic and UX laws mentioned on lawsofux.com.
 
 ### Design
@@ -52,20 +56,22 @@ We interviewed 4 existing SejutaCita users about their daily routine and their S
 - Now respondents know where their event wishlist is stored. Before this, they keep their wishlist in their note app.
 
 ### Result
-Register Button CTR on the Detail Event page improved. 
+
+Register Button CTR on the Detail Event page improved.
 
 ## Second Iteration
 
 ### Research
 
 #### Expert Interview
+
 We interviewed experts from unicorn e-commerce about the Register to Event flow.
 
 **Key Finding(s)**
 
 - Realize that different intention needs to be catered to accordingly:
-    - Impulsive; window-shopping kind of user, come without buying intension.
-    - Intentional; open the app to purchase a specific event.
+  - Impulsive; window-shopping kind of user, come without buying intension.
+  - Intentional; open the app to purchase a specific event.
 - Home needs to give users enough context of what the app has to offer.
 - Avoid endless scrolling.
 - Make sure to track every CTA so we can determine which is good and which needs improvement.
@@ -86,7 +92,8 @@ To confirm the proposed design, we conducted task-based A/B usability testing wi
 Since we were aiming to acquire new users, we decided to roll with the proposed design.
 
 ### Result
-Event Card CTR on the Explore (Event page) page improved. 
+
+Event Card CTR on the Explore (Event page) page improved.
 
 However, the number of users who reached the Event page decreased. We assumed that 1) existing users are still processing the change and 2) the Event button isn’t prominent enough.
 
@@ -105,8 +112,11 @@ Because we are focusing on the existing users’ experience, we conducted task-b
 The existing Event Button doesn’t look clickable because of the image beside it; it seems like a banner, not a button. The proposed design fixed that.
 
 ### Result
+
 CTR of the Event button on the Home page improved.
 
 ## Final Result
+
 ### The Event Card CTR on the Home and Event page improved 3x (first vs. second iteration).
+
 ### The Register Button CTR on the Detail Event page improved by 65% (initial vs. first iteration).

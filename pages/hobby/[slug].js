@@ -1,16 +1,14 @@
-import fs from 'fs';
-import matter from 'gray-matter';
-import md from 'markdown-it';
-import ShortInfo from '../../components/shortInfo';
-import Image from 'next/image'
+import fs from "fs";
+import matter from "gray-matter";
+import md from "markdown-it";
 import { useEffect, useRef } from "react";
 import { clickHandler, scrollhandler } from "/utils/eventHandler";
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync('posts/hobby');
+  const files = fs.readdirSync("posts/hobby");
   const paths = files.map((fileName) => ({
     params: {
-      slug: fileName.replace('.md', ''),
+      slug: fileName.replace(".md", ""),
     },
   }));
   return {
@@ -20,7 +18,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const fileName = fs.readFileSync(`posts/hobby/${slug}.md`, 'utf-8');
+  const fileName = fs.readFileSync(`posts/hobby/${slug}.md`, "utf-8");
   const { data: frontmatter, content } = matter(fileName);
   return {
     props: {
@@ -42,16 +40,14 @@ export default function PostPage({ frontmatter, content }) {
     };
   }, []);
 
-  const imgBackground = {
-    backgroundImage: "url(/" + `${frontmatter.previewImg}` + ")"
-  }
-
   return (
     <>
-    <div className='prose'>
-      <h1>{frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
-    </div>
+      <div className="hobby-shadow">
+        <div className="prose">
+          <h1>{frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+        </div>
+      </div>
     </>
   );
 }
