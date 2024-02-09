@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <div className="margin-web">
       <div className="about-intro">
-        <Image src="/images/profile-picture.jpg" width="400px" height="400px" />
+        <Image src="/images/profile-picture.jpg" width="400" height="400" />
       </div>
       <div className="about-us">
         <h1>About Me</h1>
