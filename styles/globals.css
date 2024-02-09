@@ -289,11 +289,11 @@ hr {
   }
 
   .work-shadow {
-    padding: 0rem;
+    padding: 2rem;
   }
 
   .hobby-shadow {
-    padding: 4rem 0;
+    padding: 4rem 2rem;
   }
 
   .bar.active {
