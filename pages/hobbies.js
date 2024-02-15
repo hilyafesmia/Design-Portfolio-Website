@@ -16,7 +16,6 @@ export default function HobbiesPage({ posts }) {
   return (
     <div className="margin-web column">
       <h1>Hobbies</h1>
-      <p>Under construction👷🏻‍♀️</p>
       <div className="cards">
         {posts.toReversed().map(({ slug, frontmatter }, index) => (
           <HobbyCard
