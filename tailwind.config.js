@@ -13,7 +13,7 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            maxWidth: "800px",
+            maxWidth: "768px",
             margin: "auto",
             "h1, h2, h3, h4": {
               fontFamily: "Roboto Mono",
