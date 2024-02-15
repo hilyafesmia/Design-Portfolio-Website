@@ -25,13 +25,9 @@ export default function AboutPage() {
           I&#39;m a designer 💫 during the daytime and a(n) [ artist 🎨 /
           engineer 💻 / couch potato 📺, depending on mood ] during nighttime.
           Please check
-          <Link href="/works" className="link-limiter">
-            Works
-          </Link>
+          <Link href="/works">Works</Link>
           for my design-related works or
-          <Link href="/hobbies" className="link-limiter">
-            Hobbies
-          </Link>
+          <Link href="/hobbies">Hobbies</Link>
           for other exciting things I made.
         </p>
         <br />
@@ -44,15 +40,39 @@ export default function AboutPage() {
         <br />
         <p>
           Also, you can check my resume
-          <Link href="/Resume-Hilya-Auli-Fesmia-2023.pdf">here!</Link>{" "}
+          <Link
+            href="/Resume-Hilya-Auli-Fesmia-2023.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here!
+          </Link>{" "}
           (don&#39;t worry, this won&#39;t auto-download🤞🏼)
         </p>
         <br />
         <div className="contact-us">
           <h3>Get in touch</h3>
-          <Link href="mailto:hilyafesmia@gmail.com">hilyafesmia@gmail.com</Link>
-          <Link href="https://wa.me/6281296697907">+62 812-9669-7907</Link>
-          <Link href="https://www.linkedin.com/in/hilyafesmia/">LinkedIn</Link>
+          <Link
+            href="mailto:hilyafesmia@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hilyafesmia@gmail.com
+          </Link>
+          <Link
+            href="https://wa.me/6285163501230"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            +62 851-6350-1230
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/hilyafesmia/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            linkedin.com/in/hilyafesmia
+          </Link>
         </div>
       </div>
     </div>
