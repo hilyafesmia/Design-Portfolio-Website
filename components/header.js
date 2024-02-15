@@ -13,7 +13,6 @@ export default function Header() {
     link.forEach((n) =>
       n.addEventListener("click", () => {
         closeMenu();
-        console.log("click link");
       })
     );
 
@@ -21,14 +20,12 @@ export default function Header() {
       headerMenu.classList.remove("active");
       headerBg.classList.remove("active");
       bar.forEach((n) => n.classList.remove("active"));
-      console.log("menu closed");
     }
 
     function openMenu() {
       headerMenu.classList.toggle("active");
       headerBg.classList.toggle("active");
       bar.forEach((n) => n.classList.toggle("active"));
-      console.log("menu opened");
     }
   }, []);
 
