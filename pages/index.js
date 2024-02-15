@@ -38,9 +38,9 @@ export default function Home({ posts }) {
             Hi, I&#39;m Hilya, a digital product designer based in Jakarta,
             Indonesia
           </h1>
-          <h3>
+          <h2>
             I&#39;m interested in digital product design and web development
-          </h3>
+          </h2>
         </div>
       </div>
       <div id="outer">
