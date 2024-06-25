@@ -2,28 +2,43 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+  font-family: "NewYork";
+  src: url(/fonts/NewYork.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SFPro";
+  src: url("/fonts/SF-Pro.ttf") format("truetype");
+}
+
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Roboto Mono";
-}
-
-h1 {
-  font-size: 2.5em;
+  font-family: "NewYork", sans-serif;
   font-weight: bold;
 }
 
+h1 {
+  font-size: 72pt;
+}
+
 h2 {
-  font-size: 1.5em;
+  font-size: 64pt;
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 48pt;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 40pt;
+}
+
+p {
+  font-family: "SFPro", serif;
+  font-size: 36px;
 }
 
 .hobby-shadow {
@@ -125,6 +140,7 @@ a:hover::after {
 }
 
 hr {
+  width: 100%;
   margin-top: 0.5rem;
   display: block;
   overflow: hidden;
@@ -133,13 +149,39 @@ hr {
 }
 
 .hero {
-  background-color: #b6dddd;
+  background-color: #fafafa;
   height: 90vh;
-  padding: 4rem;
+  padding: 200px;
+  gap: 80px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hero-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.hero-row {
+  display: flex;
+  gap: 40px;
+}
+
+button {
+  padding: 16px 32px;
+  border: 2px solid #29877d;
+  border-radius: 32px;
+  color: #29877d;
+}
+
+.tag-line {
+  display: flex;
+  flex-direction: column;
+  gap: -20px;
 }
 
 .scope-duration {
@@ -169,6 +211,10 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 1rem 0;
+}
+
+.maxWidth {
+  max-width: 1920px;
 }
 
 .margin-web {
