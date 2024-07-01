@@ -2,6 +2,8 @@
 title: "Film and Camera Recap"
 previewImg: "images/macemfilm.jpg"
 type: "Photography"
+desc: "I like film photography. I like that I can't see the result right away. I like the feeling of 'Nyeh, let's just take a photo and get it over with' and 'I wonder how the photo will turn out' at the same time. Although I like the element of surprise, I still want to choose which film I should bring to enhance the mood of the event I want to take photos of. And this is where the problem begins.
+"
 ---
 
 ![@macemfilm on Instagram](/images/macemfilm.jpg "@macemfilm on Instagram")

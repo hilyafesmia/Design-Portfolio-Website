@@ -15,7 +15,7 @@ export default function HighlightCard({
   const scopes = scope.split(",");
   const imageClass = classNames(card.animateBorder, style.image);
   return (
-    <Link className={style.container} href={`/work/${slug}`}>
+    <Link className={style.container} href={slug}>
       <div className={imageClass}>
         <Image fill className={card.animateZoom} alt={title} src={`/${img}`} />
       </div>

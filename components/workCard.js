@@ -6,7 +6,7 @@ export default function WorkCard({ slug, img, duration, title, scope }) {
   const scopes = scope.split(",");
 
   return (
-    <Link className={style.container} href={`/work/${slug}`}>
+    <Link className={style.container} href={slug}>
       <div className={style.animateBorder}>
         <Image className={style.animateZoom} alt={title} fill src={`/${img}`} />
       </div>

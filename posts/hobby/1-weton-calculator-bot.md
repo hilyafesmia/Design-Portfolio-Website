@@ -2,6 +2,8 @@
 title: "Weton Calculator Bot"
 previewImg: "images/primbot.jpg"
 type: "Code"
+desc: "In Javanese culture, weton is the calculation of your (or anyone's, basically) birthday based on the Javanese calendar and is used for decision-making and understanding of a person's characteristics. You can get your weton based on your Pasaran day or your birth month and year in Gregorian calendar.
+"
 ---
 
 ![primbot](/images/primbot.jpg "primbot")
@@ -12,7 +14,7 @@ type: "Code"
 
 **_TLDR; astrology made by Javanese people_**
 
-In Javanese culture, weton is a count of a person's birthday which is used as a benchmark to designate certain predictions. You can count your weton based on your Pasaran day or your birth month and year in Gregorian calendar.
+In Javanese culture, weton is the calculation of your (or anyone's, basically) birthday based on the Javanese calendar and is used for decision-making and understanding of a person's characteristics. You can get your weton based on your Pasaran day or your birth month and year in Gregorian calendar.
 
 Just like astrology, you can see a person’s deepest dark secret just by their weton. Also days to look forward to. Also days that bring bad luck. Also your compatibility with your partner. Practically anything–Javanese people use weton to predict everything.
 
