@@ -7,6 +7,7 @@ import { clickHandler, scrollhandler } from "/utils/eventHandler";
 
 import style from "../../styles/workDetail.module.css";
 import StyledLink from "../../components/styledLink";
+import classNames from "classnames";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts/work");
@@ -52,6 +53,8 @@ export default function PostPage({ frontmatter, content }) {
     html: true,
   });
 
+  const textStyle = classNames(style.startPos, "prose");
+
   return (
     <>
       <div style={imgBackground} className={style.parallax} />
@@ -64,7 +67,7 @@ export default function PostPage({ frontmatter, content }) {
             <StyledLink href="#process">Process</StyledLink>
             <StyledLink href="#result">Result</StyledLink>
           </div>
-          <div style={{ marginTop: "-160px" }} className="prose">
+          <div className={textStyle}>
             <h1>{frontmatter.title}</h1>
             <h3>{frontmatter.desc}</h3>
             <div className={style.shortinfos}>

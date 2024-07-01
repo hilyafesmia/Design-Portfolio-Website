@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import md from "markdown-it";
 import { useEffect, useRef } from "react";
 import { clickHandler, scrollhandler } from "/utils/eventHandler";
+import style from "../../styles/hobbyDetail.module.css";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts/hobby");
@@ -42,7 +43,7 @@ export default function PostPage({ frontmatter, content }) {
 
   return (
     <>
-      <div className="hobby-shadow">
+      <div className={style.shadow}>
         <div className="prose">
           <h1>{frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />

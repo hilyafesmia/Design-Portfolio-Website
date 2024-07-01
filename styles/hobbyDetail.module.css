@@ -1,0 +1,9 @@
+.shadow {
+  padding: 8rem 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .shadow {
+    padding: 6rem 2rem;
+  }
+}
