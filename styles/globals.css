@@ -2,21 +2,30 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@font-face {
-  font-family: "NewYork";
-  src: url(/fonts/NewYork.ttf) format("truetype");
-}
+@layer base {
+  @font-face {
+    font-family: "NewYork";
+    src: url(/fonts/NewYork.ttf) format("truetype");
+  }
 
-@font-face {
-  font-family: "SFPro";
-  src: url("/fonts/SF-Pro.ttf") format("truetype");
+  @font-face {
+    font-family: "SFPro";
+    src: url("/fonts/SF-Pro.ttf") format("truetype");
+  }
 }
 
 :root {
   --gray-1: #333333;
   --gray-3: #828282;
+  --gray-6: #f2f2f2;
   --gray-7: #fafafa;
   --green: #29877d;
+
+  --shadow-small: drop-shadow(0px 10px 10px #82828225);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -33,19 +42,19 @@ h4 {
 }
 
 h1 {
-  font-size: 72pt;
-}
-
-h2 {
   font-size: 56pt;
 }
 
-h3 {
+h2 {
   font-size: 40pt;
 }
 
+h3 {
+  font-size: 28pt;
+}
+
 h4 {
-  font-size: 36pt;
+  font-size: 20pt;
 }
 
 h5,
@@ -55,13 +64,100 @@ p {
 }
 
 h5 {
-  font-size: 36px;
+  font-size: 28px;
 }
 
 p {
-  font-size: 24px;
+  font-size: 16px;
 }
 
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 36pt;
+  }
+
+  h2 {
+    font-size: 28pt;
+  }
+
+  h3 {
+    font-size: 20pt;
+  }
+
+  h4 {
+    font-size: 16pt;
+  }
+
+  h5,
+  p {
+    font-family: "SFPro", serif;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .header-outer {
+    padding: 0 2rem;
+    height: 4rem;
+  }
+
+  .header-background {
+    transition: all 0.3s ease;
+  }
+
+  .header-background.active {
+    background-color: black;
+    color: white;
+  }
+
+  .header-menu {
+    position: fixed;
+    top: -50vh;
+    left: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+    color: white;
+    gap: 2rem 0;
+    padding-bottom: 2rem;
+  }
+
+  .header-menu.active {
+    top: 4rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .bar.active {
+    background-color: white;
+    transition: all 0.5s ease;
+  }
+}
+
+/* 
 .hobby-shadow {
   padding-top: 8rem;
 }
@@ -393,4 +489,4 @@ hr {
   .margin-web {
     padding: 6rem 2rem;
   }
-}
+} */

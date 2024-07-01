@@ -1,6 +1,6 @@
 import style from "../styles/highlightCard.module.css";
 import Link from "next/link";
-import card from "../styles/workCard.module.css";
+import card from "../styles/card.module.css";
 import Image from "next/image";
 import classNames from "classnames";
 

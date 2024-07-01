@@ -1,12 +1,14 @@
 .container {
   width: 100%;
   min-height: 95vh;
+  height: fit-content;
 
   position: relative;
   display: flex;
   justify-content: center;
 
   margin-top: -80px;
+  padding-top: 80px;
 
   border-radius: 0 0 100px 100px;
   background-color: var(--gray-7);
@@ -23,4 +25,13 @@
 
 .bottom {
   z-index: 10;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    border-radius: 0 0 36px 36px;
+
+    padding-top: 36px;
+    margin-top: -36px;
+  }
 }

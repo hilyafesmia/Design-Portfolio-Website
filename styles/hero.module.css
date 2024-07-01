@@ -1,17 +1,16 @@
 .margin {
   width: 100%;
   max-width: 1920px;
-  padding: 280px 200px 200px 200px;
+  padding: 200px;
   margin: auto;
   height: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 64px;
 }
 .tagline {
   display: flex;
   flex-direction: column;
-  gap: -100px;
 }
 
 .cta {
@@ -26,4 +25,21 @@
   display: flex;
   align-items: center;
   gap: 24px;
+}
+
+.spacingArrow {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .margin {
+    padding: 72px 36px;
+    gap: 40px;
+  }
+
+  .cta {
+    flex-wrap: wrap-reverse;
+    row-gap: 24px;
+  }
 }

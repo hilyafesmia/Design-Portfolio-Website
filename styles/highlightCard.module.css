@@ -20,3 +20,19 @@
 .image {
   width: 50%;
 }
+
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .details {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .image {
+    width: 100%;
+  }
+}

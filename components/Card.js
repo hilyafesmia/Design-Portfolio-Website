@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import style from "../styles/workCard.module.css";
+import style from "../styles/card.module.css";
 
-export default function WorkCard({ slug, img, duration, title, scope }) {
+export default function Card({ slug, img, duration, title, scope }) {
   const scopes = scope.split(",");
 
   return (

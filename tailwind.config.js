@@ -6,18 +6,16 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      display: ["Roboto Mono", "sans-serif"],
-      body: ["Proxima Nova", "sans-serif"],
+      display: ["NewYork", "sans-serif"],
+      body: ["SFPro", "sans-serif"],
     },
     extend: {
+      textColor: "#333333",
       typography: {
         DEFAULT: {
           css: {
             maxWidth: "768px",
             margin: "auto",
-            "h1, h2, h3, h4": {
-              fontFamily: "Roboto Mono",
-            },
             h4: {
               color: "darkcyan",
             },

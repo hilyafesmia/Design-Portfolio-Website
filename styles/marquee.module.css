@@ -5,7 +5,7 @@
   color: var(--gray-7);
   font-family: "NewYork";
   font-weight: 600;
-  font-size: 72pt;
+  font-size: 56pt;
 
   display: flex;
   white-space: nowrap;
@@ -24,5 +24,11 @@
 
   to {
     transform: translateX(-100%);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .marquee {
+    font-size: 36pt;
   }
 }

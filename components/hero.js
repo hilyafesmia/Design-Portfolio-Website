@@ -29,12 +29,12 @@ export default function Hero() {
         </AnimateFadeIn>
         <AnimateFadeIn delayInMilliseconds={500}>
           <div className={style.cta}>
-            <div className={style.action}>
+            <div className={style.spacingArrow}>
               <h5>See My Works</h5>
               <iframe
                 src="https://lottie.host/embed/a57508f4-16dd-4bdb-ab27-14915e46c881/R7nJRWpe0h.json"
-                width="96px"
-                height="96px"
+                width="64px"
+                height="64px"
               ></iframe>
             </div>
             <div className={style.action}>

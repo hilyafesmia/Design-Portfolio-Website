@@ -1,7 +1,7 @@
 import SectionContainer from "./sectionContainer";
 import style from "../styles/workSection.module.css";
 import hero from "../styles/hero.module.css";
-import WorkCard from "./workCard";
+import Card from "./Card";
 import HighlightCard from "./highlightCard";
 import AnimateFadeIn from "./animateFadeIn";
 import Button from "./button";
@@ -41,7 +41,7 @@ export default function WorkSection({ posts }) {
               .reverse()
               .map(({ slug, frontmatter }, index) => {
                 return (
-                  <WorkCard
+                  <Card
                     key={index}
                     slug={slug}
                     img={frontmatter.previewImg}
