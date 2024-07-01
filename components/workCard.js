@@ -1,18 +1,28 @@
 import Link from "next/link";
 import Image from "next/image";
+import style from "../styles/workCard.module.css";
 
 export default function WorkCard({ slug, img, duration, title, scope }) {
+  const scopes = scope.split(",");
+
   return (
-    <Link className="card-item" href={`/work/${slug}`}>
-      <div className="animate-border">
-        <Image fill alt={title} src={`/${img}`} />
+    <Link className={style.container} href={`/work/${slug}`}>
+      <div className={style.animateBorder}>
+        <Image className={style.animateZoom} alt={title} fill src={`/${img}`} />
       </div>
-      <hr />
-      <div className="scope-duration">
-        <p>{scope}</p>
-        <p>{duration}</p>
+      <div className={style.details}>
+        <div className={style.top}>
+          <div className={style.tags}>
+            {scopes.map((scope, index) => (
+              <div key={title + "-" + index} className={style.chips}>
+                {scope}
+              </div>
+            ))}
+          </div>
+          <div className={style.duration}>{duration}</div>
+        </div>
+        <h3>{title}</h3>
       </div>
-      <h2>{title}</h2>
     </Link>
   );
 }
