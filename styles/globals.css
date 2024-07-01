@@ -19,6 +19,10 @@
   --green: #29877d;
 }
 
+body {
+  background-color: var(--gray-7);
+}
+
 h1,
 h2,
 h3,

@@ -1,12 +1,12 @@
 import SectionContainer from "./sectionContainer";
-import style from "../styles/works.module.css";
+import style from "../styles/workSection.module.css";
 import hero from "../styles/hero.module.css";
 import WorkCard from "./workCard";
 import HighlightCard from "./highlightCard";
 import AnimateFadeIn from "./animateFadeIn";
 import Button from "./button";
 
-export default function Works({ posts }) {
+export default function WorkSection({ posts }) {
   const totalPost = posts.length;
   const latestPost = posts[totalPost - 1];
   return (

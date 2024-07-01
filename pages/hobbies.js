@@ -1,6 +1,8 @@
 import fs from "fs";
-import HobbyCard from "../components/hobbyCard";
 import retrievePosts from "../utils/retrievePosts";
+import Marquee from "../components/marquee";
+import hero from "../styles/hero.module.css";
+import WorkCard from "../components/workCard";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts/hobby");
@@ -14,21 +16,25 @@ export async function getStaticProps() {
 
 export default function HobbiesPage({ posts }) {
   return (
-    <div className="margin-web column">
-      <h1>Hobbies</h1>
-      <div className="cards">
-        {posts
-          .slice()
-          .reverse()
-          .map(({ slug, frontmatter }, index) => (
-            <HobbyCard
-              key={index}
-              slug={slug}
-              img={frontmatter.previewImg}
-              type={frontmatter.type}
-              title={frontmatter.title}
-            />
-          ))}
+    <div style={{ paddingTop: "280px" }}>
+      <h1>
+        <Marquee text="my hobbies ✶ my hobbies ✶ " />
+      </h1>
+      <div className={hero.margin}>
+        <div className="cards">
+          {posts
+            .slice()
+            .reverse()
+            .map(({ slug, frontmatter }, index) => (
+              <WorkCard
+                key={index}
+                slug={slug}
+                img={frontmatter.previewImg}
+                scope={frontmatter.type}
+                title={frontmatter.title}
+              />
+            ))}
+        </div>
       </div>
     </div>
   );

@@ -1,8 +1,7 @@
-import WorkCard from "../components/workCard";
 import fs from "fs";
 import retrievePosts from "../utils/retrievePosts";
 import Hero from "../components/hero";
-import Works from "../components/works";
+import WorkSection from "../components/workSection";
 import style from "../styles/Index.module.css";
 import Hobbies from "../components/hobbies";
 
@@ -22,33 +21,11 @@ export async function getStaticProps() {
 }
 
 export default function Home({ works, hobbies }) {
-  console.log("works", works);
-  console.log("hobbs", hobbies);
-
   return (
     <div className={style.home}>
       <Hero />
-      <Works posts={works} />
+      <WorkSection posts={works} />
       <Hobbies posts={hobbies} />
-      <div className="margin-web column">
-        <h1>Past Works</h1>
-        <div className="cards">
-          {/* {posts &&
-            posts
-              .slice()
-              .reverse()
-              .map(({ slug, frontmatter }, index) => (
-                <WorkCard
-                  key={index}
-                  slug={slug}
-                  img={frontmatter.previewImg}
-                  duration={frontmatter.duration}
-                  scope={frontmatter.scope}
-                  title={frontmatter.title}
-                />
-              ))} */}
-        </div>
-      </div>
     </div>
   );
 }
