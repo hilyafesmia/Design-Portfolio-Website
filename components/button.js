@@ -2,9 +2,15 @@ import classNames from "classnames";
 import style from "../styles/button.module.css";
 import Link from "next/link";
 
-export default function Button({ children, href, small = false }) {
+export default function Button({
+  children,
+  href,
+  small = false,
+  inverted = false,
+}) {
   const buttonStyle = classNames(style.button, {
     [style.small]: small,
+    [style.inverted]: inverted,
   });
   return (
     <Link

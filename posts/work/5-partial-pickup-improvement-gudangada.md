@@ -27,7 +27,7 @@ In this project, we focused on the pickup and return phase in the delivery proce
 
 Product Designer. My workflow includes creating a research plan, user interviews, and UI design. This project also involves tight collaboration between the Product Manager and Operational Staff.
 
-## Problem Statement {#problem}
+## Problem Statement
 
 GudangAda currently relies on printed documents to track delivered and returned items. Following delivery, the Buyer confirms receipt, the Seller acknowledges the return items and Gross Merchandise Value (GMV), and then the Driver manually inputs this information into the GudangAda Driver App. However, this reliance on manual data entry generates problems:
 

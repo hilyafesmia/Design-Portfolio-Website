@@ -19,7 +19,7 @@ export default function HobbiesPage({ posts }) {
   return (
     <div className={work.container}>
       <h1>
-        <Marquee text="my hobbies ✶ my hobbies ✶ " />
+        <Marquee text="my hobbies ✶ my hobbies ✶ my hobbies ✶ my hobbies ✶ my hobbies ✶ my hobbies ✶ " />
       </h1>
       <div className={hero.margin}>
         <div className={work.cards}>

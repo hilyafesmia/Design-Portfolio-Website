@@ -7,7 +7,7 @@ previewImg: "images/HCI/Cover.jpg"
 company: "HomeCredit Indonesia"
 role: "Product Designer, Front-end Developer"
 scope: "Desktop Web"
-duration: "Feb–Mar 2019"
+duration: "Feb 2019"
 ---
 
 ## <a id="overview" style="position:relative;top:-200px"></a> Overview

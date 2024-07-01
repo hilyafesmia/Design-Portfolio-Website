@@ -7,7 +7,7 @@ previewImg: images/SejutaCita/Cover.jpg
 company: "SejutaCita"
 role: "Product Designer"
 scope: "Mobile App"
-duration: "Feb-April 2020"
+duration: "Feb 2020"
 ---
 
 ## <a id="overview" style="position:relative;top:-200px"></a> Overview

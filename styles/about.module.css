@@ -30,12 +30,19 @@
 
 .profile {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
 .right a {
   color: var(--green);
   display: inline-block;
+}
+
+.reviewer {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
 }
 
 @media only screen and (max-width: 900px) {

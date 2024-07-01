@@ -8,12 +8,17 @@ export default function AboutPage() {
   return (
     <div className={work.container}>
       <h1>
-        <Marquee text="about me ✶ about me ✶ about me ✶ about me ✶ " />
+        <Marquee text="about me ✶ about me ✶ about me ✶ about me ✶ about me ✶ about me ✶ " />
       </h1>
       <div className={style.container}>
         <div className={style.left}>
           <h2>Short Bio</h2>
-          <Image src={"/images/profile-picture.jpg"} width={343} height={343} />
+          <Image
+            alt="Hilya's profile picture"
+            src={"/images/profile-picture.jpg"}
+            width={343}
+            height={343}
+          />
         </div>
         <div className={style.right}>
           <p>
@@ -28,7 +33,7 @@ export default function AboutPage() {
             <br /> <br />
             <span>
               I&#39;m a designer 💫 during the daytime and a(n) [ artist 🎨 /
-              engineer 💻 / gamer 📺, depending on mood ] during nighttime.
+              engineer 💻 / gamer 🎮, depending on mood ] during nighttime.
               Please check <StyledLink href="/works">Works</StyledLink> for my
               design-related works or{" "}
               <StyledLink href="/hobbies">Hobbies</StyledLink> for other
@@ -52,7 +57,7 @@ export default function AboutPage() {
             <i>
               “Hilya is one of the rare designers who can create quality design
               concepts within a short time. She is willing to learn how to
-              improve her work to suit users' needs better, making her an
+              improve her work to suit users&#39; needs better, making her an
               open-minded person who is keen on collaborating with people from
               varying backgrounds. What I like the most when working with her
               are her great questions! She is curious not only to hone her UI
@@ -63,7 +68,9 @@ export default function AboutPage() {
 
             <div className={style.profile}>
               <Image
-                src={"/images/profile-picture.jpg"}
+                className={style.reviewer}
+                alt="Irsyadila's profile picture"
+                src={"/images/irsyadila.jpeg"}
                 width={64}
                 height={64}
               />
@@ -114,7 +121,7 @@ export default function AboutPage() {
     //     <p>
     //       Also, you can check my resume
     //       <Link
-    //         href="/Resume-Hilya-Auli-Fesmia-2023.pdf"
+    //         href="/Resume-Hilya-Auli-Fesmia-2024.pdf"
     //         target="_blank"
     //         rel="noopener noreferrer"
     //       >

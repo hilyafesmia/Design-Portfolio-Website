@@ -41,7 +41,7 @@ export default function Hero() {
               <Button href="https://www.linkedin.com/in/hilyafesmia/">
                 LinkedIn
               </Button>
-              <Button href="/Resume-Hilya-Auli-Fesmia-2023.pdf">Resume</Button>
+              <Button href="/Resume-Hilya-Auli-Fesmia-2024.pdf">Resume</Button>
             </div>
           </div>
         </AnimateFadeIn>

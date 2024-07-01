@@ -22,7 +22,12 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="/icons/Email.svg" width="28" height="28" />
+              <Image
+                alt="email"
+                src="/icons/Email.svg"
+                width="28"
+                height="28"
+              />
               <h5>hilyafesmia@gmail.com</h5>
             </Link>
             <Link
@@ -31,7 +36,12 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="/icons/WhatsApp.svg" width="28" height="28" />
+              <Image
+                alt="WhatsApp"
+                src="/icons/WhatsApp.svg"
+                width="28"
+                height="28"
+              />
               <h5>(+62) 851-6350-1230</h5>
             </Link>
             <Link
@@ -40,16 +50,26 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="/icons/LinkedIn.svg" width="28" height="28" />
+              <Image
+                alt="LinkedIn"
+                src="/icons/LinkedIn.svg"
+                width="28"
+                height="28"
+              />
               <h5>Hilya Auli Fesmia</h5>
             </Link>
             <Link
               className={style.link}
-              href="/Resume-Hilya-Auli-Fesmia-2023.pdf"
+              href="/Resume-Hilya-Auli-Fesmia-2024.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="/icons/Resume.svg" width="28" height="28" />
+              <Image
+                alt="Resume"
+                src="/icons/Resume.svg"
+                width="28"
+                height="28"
+              />
               <h5>Resume</h5>
             </Link>
           </div>

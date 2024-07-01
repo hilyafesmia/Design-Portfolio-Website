@@ -19,7 +19,7 @@ export default function WorksPage({ posts }) {
   return (
     <div className={style.container}>
       <h1>
-        <Marquee text="my works ✶ my works ✶ " />
+        <Marquee text="my works ✶ my works ✶ my works ✶ my works ✶ my works ✶ my works ✶ " />
       </h1>
       <div className={hero.margin}>
         <div className={style.cards}>

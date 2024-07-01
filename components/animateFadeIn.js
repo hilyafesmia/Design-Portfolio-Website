@@ -32,7 +32,7 @@ export default function AnimateFadeIn({ children, delayInMilliseconds = 0 }) {
     return () => {
       if (containerRef.current) observer.unobserve(containerRef.current);
     };
-  }, [containerRef, options]);
+  }, [containerRef, setVisibility]);
 
   return (
     <div className={visibilityClass} ref={containerRef}>

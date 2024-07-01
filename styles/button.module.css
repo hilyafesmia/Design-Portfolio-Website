@@ -18,3 +18,8 @@
   font-size: 12px;
   background-color: var(--gray-7);
 }
+
+.inverted {
+  background-color: var(--green);
+  color: var(--gray-7);
+}
