@@ -10,7 +10,7 @@ scope: "Mobile App, Mobile Web"
 duration: "Jan 2023"
 ---
 
-## Overview
+## <a id="overview" style="position:relative;top:-200px"></a> Overview
 
 GudangAda is an Indonesian-based B2B e-commerce platform that connects small and medium-sized businesses to suppliers and helps with logistics and financing.
 
@@ -42,7 +42,7 @@ This problem was only discovered after the Seller complained to Marketplace Ops.
 
 From that assumption, we tried to fix this by finding out what kind of interaction we needed to provide between Seller and Driver so that both would make sure that the reported number was correct.
 
-## Process Summary
+## <a id="process" style="position:relative;top:-200px"></a> Process Summary
 
 ![Flow](/images/GudangAda/Flow.jpg "Flow")
 
@@ -134,7 +134,7 @@ Following organization restructuring, we could not proceed with the planned test
 
 We would conduct a concept test to identify user feedback on the Partial Pickup Improvement concept and to understand its potential for resolving Partial Pickup issues and its usability in improving the item preparation process. We would select one TGA seller and two MP Sellers (along with the Drivers assigned for each store) who have experienced data discrepancies due to Partial Pickup.
 
-## Personal Takeaways
+## <a id="result" style="position:relative;top:-200px"></a> Personal Takeaways
 
 ### Designing for Drivers
 

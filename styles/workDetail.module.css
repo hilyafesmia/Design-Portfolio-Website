@@ -1,0 +1,91 @@
+.parallax {
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shadow {
+  z-index: 1;
+  box-shadow: 0 -1rem 2rem rgb(0, 0, 0, 0.05);
+  padding: 120px 0;
+}
+
+.shortinfos {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.shortinfo-item {
+  width: 160px;
+}
+
+.contentList {
+  position: sticky;
+  top: 120px;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 200px;
+
+  border-right: 1px solid var(--gray-3);
+}
+
+.contentList p {
+  text-transform: uppercase;
+  color: var(--gray-3);
+  font-size: 12px;
+}
+
+.margin {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1920px;
+  margin: auto;
+  padding: 0 200px;
+}
+
+.startPos {
+  margin-top: -160px;
+}
+
+@media only screen and (max-width: 900px) {
+  .shadow {
+    padding: 0;
+  }
+
+  .startPos {
+    margin-top: 0;
+  }
+
+  .margin {
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .parallax {
+    height: 50vh;
+  }
+
+  .contentList {
+    position: relative;
+    z-index: 0;
+    top: 0;
+
+    border: 0;
+    padding: 2rem;
+    background-color: var(--gray-6);
+    width: 100%;
+    border-radius: 16px;
+  }
+}

@@ -1,0 +1,34 @@
+.marquee {
+  background-color: var(--green);
+  width: 100%;
+
+  color: var(--gray-7);
+  font-family: "NewYork";
+  font-weight: 600;
+  font-size: 56pt;
+
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee span {
+  padding: 0 8px;
+  animation: marquee 15s infinite linear;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .marquee {
+    font-size: 36pt;
+  }
+}

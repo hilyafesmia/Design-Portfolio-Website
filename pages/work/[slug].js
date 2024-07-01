@@ -1,9 +1,13 @@
 import fs from "fs";
 import matter from "gray-matter";
-import md from "markdown-it";
+import markdownit from "markdown-it";
 import ShortInfo from "../../components/shortInfo";
 import { useEffect, useRef } from "react";
 import { clickHandler, scrollhandler } from "/utils/eventHandler";
+
+import style from "../../styles/workDetail.module.css";
+import StyledLink from "../../components/styledLink";
+import classNames from "classnames";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts/work");
@@ -45,20 +49,35 @@ export default function PostPage({ frontmatter, content }) {
     backgroundImage: "url(/" + `${frontmatter.previewImg}` + ")",
   };
 
+  const md = markdownit({
+    html: true,
+  });
+
+  const textStyle = classNames(style.startPos, "prose");
+
   return (
     <>
-      <div style={imgBackground} className="parallax" />
-      <div className="work-shadow">
-        <div className="prose">
-          <h1>{frontmatter.title}</h1>
-          <h3>{frontmatter.desc}</h3>
-          <div className="shortinfos">
-            <ShortInfo type={"Company"} content={frontmatter.company} />
-            <ShortInfo type={"Role"} content={frontmatter.role} />
-            <ShortInfo type={"Scope"} content={frontmatter.scope} />
-            <ShortInfo type={"Duration"} content={frontmatter.duration} />
+      <div style={imgBackground} className={style.parallax} />
+
+      <div className={style.shadow}>
+        <div className={style.margin}>
+          <div className={style.contentList}>
+            <p>Quick Access</p>
+            <StyledLink href="#overview">Overview</StyledLink>
+            <StyledLink href="#process">Process</StyledLink>
+            <StyledLink href="#result">Result</StyledLink>
           </div>
-          <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+          <div className={textStyle}>
+            <h1>{frontmatter.title}</h1>
+            <h3>{frontmatter.desc}</h3>
+            <div className={style.shortinfos}>
+              <ShortInfo type={"Company"} content={frontmatter.company} />
+              <ShortInfo type={"Role"} content={frontmatter.role} />
+              <ShortInfo type={"Scope"} content={frontmatter.scope} />
+              <ShortInfo type={"Duration"} content={frontmatter.duration} />
+            </div>
+            <div dangerouslySetInnerHTML={{ __html: md.render(content) }} />
+          </div>
         </div>
       </div>
     </>

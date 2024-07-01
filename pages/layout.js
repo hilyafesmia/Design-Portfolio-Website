@@ -8,13 +8,13 @@ export default function Layout({ children }) {
       <Head>
         <title>Hilya&#39;s Product Design Portfolio</title>
         <meta name="description" content="Hilya's Product Design Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.svg" />
       </Head>
       <Header />
-      <div className="">
-        <main>{children}</main>
-      </div>
-      <Footer />
+      <main>
+        {children}
+        <Footer />
+      </main>
     </>
   );
 }

@@ -1,0 +1,46 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.counter {
+  background-color: var(--gray-1);
+  border-radius: 100px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "NewYork";
+  font-size: 32pt;
+  font-weight: 600;
+  color: var(--gray-7);
+}
+
+.catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 120px;
+}
+
+@media only screen and (max-width: 900px) {
+  .counter {
+    font-size: 20pt;
+    width: 40px;
+    height: 40px;
+  }
+
+  .title {
+    gap: 12px;
+  }
+}

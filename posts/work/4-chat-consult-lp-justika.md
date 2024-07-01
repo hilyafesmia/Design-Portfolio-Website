@@ -10,7 +10,7 @@ scope: "Desktop Web, Mobile Web"
 duration: "Jan 2022"
 ---
 
-## Overview
+## <a id="overview" style="position:relative;top:-200px"></a> Overview
 
 Justika is a marketplace website that specifically provides consulting services and legal assistance.
 We focused on the chat consultation process. The main goal of this project is to incorporate usability heuristic aspects in the chatroom to improve the overall chat consultation experience. As a result, the number of paying users **(NPU) increased by 39%** across all channels within five days of release.
@@ -33,7 +33,7 @@ We assumed that the lack of usability heuristic aspects in Justika's chatroom, s
 
 From that assumption, we tried to fix this by finding what we can do to meet those three usability heuristic aspects so that users can start chat consultation without hiccups.
 
-## Process Summary
+## <a id="process" style="position:relative;top:-200px"></a> Process Summary
 
 ![Flow](/images/Justika/Flow.jpg "Flow")
 
@@ -140,6 +140,6 @@ I decided to **remove one FAQ** about recurring consultation because I was focus
 
 I also **revised the copywriting** for each of the FAQs, especially the one about the cases that Justika's lawyers can handle. It's good to mention the specific cases, but when respondents don't find the category they think their problem falls into, they bounce immediately. To tackle this, I worded the answer around convincing them that they don't have to worry because we have so many lawyers, and their problem will eventually fall into one of their specializations.
 
-## Result
+## <a id="result" style="position:relative;top:-200px"></a> Result
 
 ### The number of paying users (NPU) increased by 39% across all channels within five days of release.

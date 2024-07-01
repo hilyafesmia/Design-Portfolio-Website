@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  width: 46%;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 16px;
+
+  color: var(--gray-3);
+  font-size: 12pt;
+
+  border: 2px solid var(--gray-3);
+  border-radius: 40px;
+}
+
+.duration {
+  font-family: "NewYork";
+  font-size: 16pt;
+  font-weight: 500;
+  color: var(--gray-3);
+}
+
+.animateBorder {
+  position: relative;
+  aspect-ratio: 16/9;
+  display: flex;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.animateBorder:hover {
+  border: 0px solid transparent;
+  border-radius: 4rem;
+}
+
+.animateZoom {
+  transition: all 0.5s ease;
+}
+
+.animateZoom:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+    gap: 36px;
+  }
+
+  .top {
+    flex-wrap: wrap-reverse;
+    row-gap: 16px;
+  }
+
+  .chips {
+    font-size: 10pt;
+    border-width: 1px;
+  }
+
+  .details {
+    gap: 16px;
+  }
+}
