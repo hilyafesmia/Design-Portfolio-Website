@@ -10,7 +10,7 @@ scope: "Desktop Web"
 duration: "Feb–Mar 2019"
 ---
 
-## Overview
+## <a id="overview" style="position:relative;top:-200px"></a> Overview
 
 HomeCredit Indonesia is a company that provides financing services for customers who shop online and offline.
 In this project, we focused on ​​data retrieval and updates of the existing internal data warehouse. The main goal is to create a centralized data dictionary accessible to all stakeholders.
@@ -36,7 +36,7 @@ After looking into the problem, a question came up to mind:
 
 Instead of asking each other every time changes are made and spending their time on meetings that shouldn't even exist in the first place, analysts can just do all the discussions and data management in one app––SLOVNEEK.
 
-## Process Summary
+## <a id="process" style="position:relative;top:-200px"></a> Process Summary
 
 ![Flow](/images/HCI/Flow.jpg "Flow")
 
@@ -115,7 +115,7 @@ I used task-based usability testing and highlighted relevant issues about its us
 - Users don’t know what ‘Requests’ under Content Management is.
 - Users feel that the statistic dashboard is not needed. They prefer News as their first page.
 
-## Result
+## <a id="result" style="position:relative;top:-200px"></a> Result
 
 After multiple iterations and exploring the visual design elements, I produced some screens and turned them into an actual usable website.
 

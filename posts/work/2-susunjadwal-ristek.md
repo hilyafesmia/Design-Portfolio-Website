@@ -1,50 +1,54 @@
 ---
-title: 'SusunJadwal'
-metaTitle: 'SusunJadwal'
-desc: 'Academic registration is an activity where students choose courses they will take next semester. SusunJadwal was made back in 2015 to help students plan their courses. However, the system has not been widely used by people because it lacks several functionalities that students often need when planning their studies.'
-metaDesc: 'Academic registration is an activity where students choose courses they will take next semester. SusunJadwal was made back in 2015 to help students plan their courses. However, the system has not been widely used by people because it lacks several functionalities that students often need when planning their studies.'
-previewImg: 'images/SusunJadwal/Cover.jpg'
-company: 'Ristek Fasilkom UI 2019'
-role: 'Product Designer'
-scope: 'Desktop Web, Mobile Web'
-duration: 'Aug 2019'
+title: "SusunJadwal"
+metaTitle: "SusunJadwal"
+desc: "Academic registration is an activity where students choose courses they will take next semester. SusunJadwal was made back in 2015 to help students plan their courses. However, the system has not been widely used by people because it lacks several functionalities that students often need when planning their studies."
+metaDesc: "Academic registration is an activity where students choose courses they will take next semester. SusunJadwal was made back in 2015 to help students plan their courses. However, the system has not been widely used by people because it lacks several functionalities that students often need when planning their studies."
+previewImg: "images/SusunJadwal/Cover.jpg"
+company: "Ristek Fasilkom UI 2019"
+role: "Product Designer"
+scope: "Desktop Web, Mobile Web"
+duration: "Aug 2019"
 ---
 
-## Overview
+## <a id="overview" style="position:relative;top:-200px"></a> Overview
+
 Ristek Fasilkom UI is an independent organization operated by the students of the Faculty of Computer Science Universitas Indonesia (Fasilkom UI) that is aimed to cultivate students’ interests in the fields of science and technology.
 In this project, we focused on redesigning one of Ristek Fasilkom UI’s products: SusunJadwal. The main goal is to redesign the app to make it more relevant to the current use cases.
 As a result, the **number of created schedule during plan-prep periood reached an all-time high**.
 
-
 ### Users & Audience
+
 Recurring users, Universitas Indonesia active students
 
 ### Roles and Responsibilities
-Product Designer. This group project consisted of two other product designers, six engineers, and me. 
+
+Product Designer. This group project consisted of two other product designers, six engineers, and me.
 
 ## Problem Statement
+
 Academic registration is an activity where students choose classes they will take next semester. When planning their classes, students always have their considerations, including but not limited to taking the same classes as their peer group or avoiding morning classes at all costs. Because of this, students began to devise ways to prepare their class plans.
 
-SusunJadwal was launched back in 2015 to help students prepare their class plans. The students received it well after its first launch. 
+SusunJadwal was launched back in 2015 to help students prepare their class plans. The students received it well after its first launch.
 
 **However, the enthusiasm didn’t stay for long; they stopped using it after the second or third academic registration.**
 
 We assumed they left because it lacked the functionalities they needed when planning their studies.
 
 After looking into the problem, questions came up to mind:
+
 > Why did students stop using SusunJadwal?
 
 > What made them switch?
 
 > How might we help students to better plan their studies?
 
-## Process Summary
+## <a id="process" style="position:relative;top:-200px"></a> Process Summary
 
 ![Flow](/images/SusunJadwal/Flow.jpg "Flow")
 
 ## Research
 
-### Contextual Inquiries 
+### Contextual Inquiries
 
 #### Evaluating the current system
 
@@ -64,10 +68,9 @@ We interviewed six students about things related to their plan-making habits but
 - Students use Google Sheet as their primary platform to make a class plan because it is accessible from the phone.
 - All respondents don’t know a repository of their previously made plan exists. They think SusunJadwal can only save the last-made plan, so they screenshot the plan and keep it manually on their laptop.
 
-
 ## Design
 
-### Branding 
+### Branding
 
 **Color Palette**
 
@@ -80,7 +83,6 @@ Ristek Fasilkom UI 2019’s primary color is turquoise. Hence, a turquoise color
 ![Wireframe](/images/SusunJadwal/Wireframe.jpg "Wireframe")
 
 After the brainstorming session, we created the app's wireframes to show our solutions' general layouts.
-
 
 ### High-fidelity designs
 
@@ -98,11 +100,10 @@ This is a snippet of how you can make a plan.
 
 In the Jadwal Detail Page, we created a naming feature so students can determine which plan is which. The interaction is based on Google Sheet’s file naming feature because the students are familiar with it. We also added more rows until 9 PM (previously only until 6 PM) as student organization meetings often last until 9 PM.
 
-## Result
+## <a id="result" style="position:relative;top:-200px"></a> Result
 
 ![Stats](/images/SusunJadwal/Stats.jpg "Stats")
 
 ### The number of created schedule during plan-prep periood reached an all-time high
 
 We also introduced SusunJadwal to other faculties’ students.
-

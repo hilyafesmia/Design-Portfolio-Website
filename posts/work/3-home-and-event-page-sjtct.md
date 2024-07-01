@@ -10,7 +10,7 @@ scope: "Mobile App"
 duration: "Feb-April 2020"
 ---
 
-## Overview
+## <a id="overview" style="position:relative;top:-200px"></a> Overview
 
 SejutaCita is a ticketing platform that allows students to create, share, and attend educational events to enrich their CVs. The events range from webinars, competitions, classes, scholarships, and more.
 In this project, we focused on the Register to Event flow. The main goal is to restructure the information architecture in the app to improve the overall discovery-to-register flow.
@@ -28,7 +28,7 @@ Product Designer. My workflow includes creating a research plan, desk research, 
 
 SejutaCita aims to democratize education by providing students a place where they can find events to boost their CV thus helping them getting better opportunities. **However, based on the data, users always stopped after either reaching the Home or Event page and didn’t continue to register for the event.** We assumed that users stopped because they didn’t know what to do in the app.
 
-## Process Summary
+## <a id="process" style="position:relative;top:-200px"></a> Process Summary
 
 ![Flow](/images/SejutaCita/Flow.jpg "Flow")
 
@@ -115,7 +115,7 @@ The existing Event Button doesn’t look clickable because of the image beside i
 
 CTR of the Event button on the Home page improved.
 
-## Final Result
+## <a id="result" style="position:relative;top:-200px"></a> Final Result
 
 ### The Event Card CTR on the Home and Event page improved 3x (first vs. second iteration).
 
