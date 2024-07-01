@@ -1,0 +1,19 @@
+.button {
+  padding: 16px 32px;
+  border: 2px solid var(--green);
+  border-radius: 72px;
+  color: var(--green);
+  font-size: 24px;
+}
+
+.button:hover {
+  background-color: #29877e20;
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
+}
+
+.small {
+  padding: 8px 16px;
+  font-size: 20px;
+  background-color: var(--gray-7);
+}
