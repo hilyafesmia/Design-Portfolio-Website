@@ -1,14 +1,18 @@
 .marquee {
-  background-color: #29877d;
-  color: white;
+  background-color: var(--green);
+  width: 100%;
+
+  color: var(--gray-7);
+  font-family: "NewYork";
+  font-weight: 600;
+  font-size: 72pt;
 
   display: flex;
   white-space: nowrap;
-  width: 100%;
   overflow: hidden;
 }
 
-.marquee h1 {
+.marquee span {
   padding: 0 8px;
   animation: marquee 15s infinite linear;
 }
