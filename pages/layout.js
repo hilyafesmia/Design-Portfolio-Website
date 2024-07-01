@@ -11,10 +11,10 @@ export default function Layout({ children }) {
         <link rel="icon" href="/icon.svg" />
       </Head>
       <Header />
-      <div className="">
-        <main>{children}</main>
-      </div>
-      <Footer />
+      <main>
+        {children}
+        <Footer />
+      </main>
     </>
   );
 }

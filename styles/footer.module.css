@@ -1,0 +1,40 @@
+.backgroundColor {
+  background-color: var(--green);
+  color: var(--gray-7);
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 200px;
+
+  top: calc(100vh * 8);
+  z-index: 0;
+
+  transform: translateZ(-3px) scale(4);
+}
+
+.backgroundColor h1 {
+  color: var(--gray-7);
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.link h5 {
+  color: var(--gray-7);
+}
