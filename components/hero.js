@@ -1,64 +1,51 @@
-import Link from "next/link";
-import style from "./hero.module.css";
+import style from "../styles/hero.module.css";
 import Marquee from "./marquee.js";
-import { useEffect, useRef, useState } from "react";
 
-import classnames from "classnames";
+import AnimateFadeIn from "./animateFadeIn.js";
+import SectionContainer from "./sectionContainer.js";
+import Button from "./button.js";
 
 export default function Hero() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const visibilityClass = classnames({
-    [style.animateIn]: isVisible == true,
-    [style.hide]: isVisible == false,
-  });
-
-  const setVisibility = (entries) => {
-    const [entry] = entries;
-    setIsVisible(entry.isIntersecting);
-  };
-
-  const containerRef = useRef(null);
-
-  const options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.5,
-  };
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(setVisibility, options);
-    if (containerRef.current) observer.observe(containerRef.current);
-    return () => {
-      if (containerRef.current) observer.unobserve(containerRef.current);
-    };
-  }, [containerRef, options]);
-
   return (
-    <div className={style.container} ref={containerRef}>
-      <div className={classnames(style.margin, visibilityClass)}>
+    <SectionContainer position="top">
+      <div className={style.margin}>
         <div className={style.tagline}>
-          <h1>I make</h1>
-          <Marquee text="mobile app ✶ desktop website ✶ " />
-          <h1>that works</h1>
+          <AnimateFadeIn>
+            <h1>I make</h1>
+          </AnimateFadeIn>
+          <AnimateFadeIn delayInMilliseconds={100}>
+            <Marquee text="mobile app ✶ desktop website ✶ " />
+          </AnimateFadeIn>
+          <AnimateFadeIn delayInMilliseconds={200}>
+            <h1>that works</h1>
+          </AnimateFadeIn>
         </div>
-        <p>A Product Designer who looks beyond just the interface.</p>
-        <hr />
-        <div className={style.cta}>
-          <div className={style.action}>
-            <p>See My Works</p>
-            <iframe
-              src="https://lottie.host/embed/a57508f4-16dd-4bdb-ab27-14915e46c881/R7nJRWpe0h.json"
-              width="96px"
-              height="96px"
-            ></iframe>
+
+        <AnimateFadeIn delayInMilliseconds={300}>
+          <h5>A Product Designer who looks beyond just the interface.</h5>
+        </AnimateFadeIn>
+        <AnimateFadeIn delayInMilliseconds={400}>
+          <hr />
+        </AnimateFadeIn>
+        <AnimateFadeIn delayInMilliseconds={500}>
+          <div className={style.cta}>
+            <div className={style.action}>
+              <h5>See My Works</h5>
+              <iframe
+                src="https://lottie.host/embed/a57508f4-16dd-4bdb-ab27-14915e46c881/R7nJRWpe0h.json"
+                width="96px"
+                height="96px"
+              ></iframe>
+            </div>
+            <div className={style.action}>
+              <Button href="https://www.linkedin.com/in/hilyafesmia/">
+                LinkedIn
+              </Button>
+              <Button href="/Resume-Hilya-Auli-Fesmia-2023.pdf">Resume</Button>
+            </div>
           </div>
-          <div className={style.action}>
-            <button>LinkedIn</button>
-            <button>Resume</button>
-          </div>
-        </div>
+        </AnimateFadeIn>
       </div>
-    </div>
+    </SectionContainer>
   );
 }

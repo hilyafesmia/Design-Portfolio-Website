@@ -17,15 +17,18 @@ export default function HobbiesPage({ posts }) {
     <div className="margin-web column">
       <h1>Hobbies</h1>
       <div className="cards">
-        {posts.toReversed().map(({ slug, frontmatter }, index) => (
-          <HobbyCard
-            key={index}
-            slug={slug}
-            img={frontmatter.previewImg}
-            type={frontmatter.type}
-            title={frontmatter.title}
-          />
-        ))}
+        {posts
+          .slice()
+          .reverse()
+          .map(({ slug, frontmatter }, index) => (
+            <HobbyCard
+              key={index}
+              slug={slug}
+              img={frontmatter.previewImg}
+              type={frontmatter.type}
+              title={frontmatter.title}
+            />
+          ))}
       </div>
     </div>
   );

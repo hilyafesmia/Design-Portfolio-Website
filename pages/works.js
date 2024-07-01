@@ -17,16 +17,19 @@ export default function WorksPage({ posts }) {
     <div className="margin-web column">
       <h1>Works</h1>
       <div className="cards">
-        {posts.toReversed().map(({ slug, frontmatter }, index) => (
-          <WorkCard
-            key={index}
-            slug={slug}
-            img={frontmatter.previewImg}
-            duration={frontmatter.duration}
-            scope={frontmatter.scope}
-            title={frontmatter.title}
-          />
-        ))}
+        {posts
+          .slice()
+          .reverse()
+          .map(({ slug, frontmatter }, index) => (
+            <WorkCard
+              key={index}
+              slug={slug}
+              img={frontmatter.previewImg}
+              duration={frontmatter.duration}
+              scope={frontmatter.scope}
+              title={frontmatter.title}
+            />
+          ))}
       </div>
     </div>
   );

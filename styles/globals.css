@@ -12,12 +12,20 @@
   src: url("/fonts/SF-Pro.ttf") format("truetype");
 }
 
+:root {
+  --gray-1: #333333;
+  --gray-3: #828282;
+  --gray-7: #fafafa;
+  --green: #29877d;
+}
+
 h1,
 h2,
 h3,
 h4 {
   font-family: "NewYork", sans-serif;
-  font-weight: bold;
+  font-weight: 600;
+  color: var(--gray-1);
 }
 
 h1 {
@@ -25,20 +33,29 @@ h1 {
 }
 
 h2 {
-  font-size: 64pt;
+  font-size: 56pt;
 }
 
 h3 {
-  font-size: 48pt;
-}
-
-h4 {
   font-size: 40pt;
 }
 
+h4 {
+  font-size: 36pt;
+}
+
+h5,
 p {
   font-family: "SFPro", serif;
+  color: var(--gray-1);
+}
+
+h5 {
   font-size: 36px;
+}
+
+p {
+  font-size: 24px;
 }
 
 .hobby-shadow {
@@ -51,60 +68,11 @@ p {
   padding: 4rem;
 }
 
-.header-outer {
-  max-width: 1920px;
-  margin: auto;
-  padding: 2rem 16rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-background {
-  backdrop-filter: blur(1rem);
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 1;
-}
-
-.header-menu {
-  display: flex;
-  gap: 2rem;
-}
-
-a h3 {
-  font-family: "Roboto Mono";
-}
-
-.header-menu a {
-  font-family: "Roboto Mono";
-  font-size: 1em;
-}
-
 .about-us a {
   display: inline-block;
   margin: 0 4px;
   color: darkcyan;
   width: fit-content;
-}
-
-a::after .card-item {
-  transition: none;
-}
-
-a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: darkcyan;
-  transition: width 0.3s;
-}
-
-a:hover::after {
-  width: 100%;
 }
 
 .hamburger {
@@ -169,13 +137,6 @@ hr {
 .hero-row {
   display: flex;
   gap: 40px;
-}
-
-button {
-  padding: 16px 32px;
-  border: 2px solid #29877d;
-  border-radius: 32px;
-  color: #29877d;
 }
 
 .tag-line {
