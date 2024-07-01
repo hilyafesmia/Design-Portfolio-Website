@@ -1,0 +1,24 @@
+.outer {
+  max-width: 1920px;
+  margin: auto;
+  padding: 2rem 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.background {
+  backdrop-filter: blur(1rem);
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 30;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}

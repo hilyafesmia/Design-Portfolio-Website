@@ -1,5 +1,8 @@
-import Link from "next/link";
 import { useEffect } from "react";
+import style from "../styles/header.module.css";
+import StyledLink from "./styledLink";
+import Button from "./button";
+import Link from "next/link";
 
 export default function Header() {
   useEffect(() => {
@@ -30,16 +33,19 @@ export default function Header() {
   }, []);
 
   return (
-    <nav className="header-background">
-      <div className="header-outer">
-        <h3>
-          <Link href="/">Hilya Auli Fesmia</Link>
-        </h3>
-        <div className="header-menu">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/works">Works</Link>
-          <Link href="/hobbies">Hobbies</Link>
+    <nav className={style.background}>
+      <div className={style.outer}>
+        <Link href="/">
+          <img src="icon.svg" />
+        </Link>
+        <div className={style.menu}>
+          <StyledLink href="/">Home</StyledLink>
+          <StyledLink href="/about">About</StyledLink>
+          <StyledLink href="/works">Works</StyledLink>
+          <StyledLink href="/hobbies">Hobbies</StyledLink>
+          <Button small href="mailto:hilyafesmia@gmail.com">
+            Contact Me
+          </Button>
         </div>
         <div className="hamburger">
           <span className="bar"></span>
