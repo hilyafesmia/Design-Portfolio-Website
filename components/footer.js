@@ -1,8 +1,9 @@
-import Link from "next/link";
-import hero from "../styles/hero.module.css";
-import style from "../styles/footer.module.css";
 import Image from "next/image";
+import Link from "next/link";
+import style from "../styles/footer.module.css";
+import hero from "../styles/hero.module.css";
 import AnimateFadeIn from "./animateFadeIn";
+import StyledLink from "./styledLink";
 
 export default function Footer() {
   return (
@@ -73,6 +74,18 @@ export default function Footer() {
               <h5>Resume</h5>
             </Link>
           </div>
+        </AnimateFadeIn>
+        <AnimateFadeIn>
+          <StyledLink
+            inverted
+            href="https://github.com/hilyafesmia/portfolio/tree/new-ui"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p style={{ textAlign: "center" }}>
+              Made with love, blood, and tears. (2024)
+            </p>
+          </StyledLink>
         </AnimateFadeIn>
       </div>
     </div>

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import work from "../styles/work.module.css";
 import Marquee from "../components/marquee";
 import StyledLink from "../components/styledLink";
 import style from "../styles/about.module.css";
+import work from "../styles/work.module.css";
 
 export default function AboutPage() {
   return (

@@ -1,11 +1,11 @@
-import style from "../styles/header.module.css";
-import StyledLink from "./styledLink";
-import Button from "./button";
-import Link from "next/link";
+import classNames from "classnames";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import useWindowSize from "../hooks/useWindowSize";
-import classNames from "classnames";
+import style from "../styles/header.module.css";
+import Button from "./button";
+import StyledLink from "./styledLink";
 
 export default function Header() {
   const [isMobileMode, setMobileMode] = useState(false);
@@ -49,7 +49,7 @@ export default function Header() {
         <Link href="/">
           <Image
             alt="Hilya Auli Fesmia"
-            src="icon.svg"
+            src="/icon.svg"
             height={"64"}
             width={"64"}
           />
@@ -70,7 +70,7 @@ export default function Header() {
       <div className={style.header}>
         <Image
           alt="Hilya Auli Fesmia"
-          src="icon.svg"
+          src="/icon.svg"
           height={"64"}
           width={"64"}
         />
@@ -84,7 +84,7 @@ export default function Header() {
           <Link className={style.logo} href="/">
             <Image
               alt="Hilya Auli Fesmia"
-              src="icon-inverted.svg"
+              src="/icon-inverted.svg"
               height={"64"}
               width={"64"}
             />
