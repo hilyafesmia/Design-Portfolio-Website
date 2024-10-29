@@ -4,6 +4,7 @@ import md from "markdown-it";
 import { useEffect, useRef } from "react";
 import { clickHandler, scrollhandler } from "/utils/eventHandler";
 import style from "../../styles/hobbyDetail.module.css";
+import Head from "next/head";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts/hobby");
@@ -43,6 +44,9 @@ export default function PostPage({ frontmatter, content }) {
 
   return (
     <>
+      <Head>
+        <title>{frontmatter.title}</title>
+      </Head>
       <div className={style.shadow}>
         <div className="prose">
           <h1>{frontmatter.title}</h1>

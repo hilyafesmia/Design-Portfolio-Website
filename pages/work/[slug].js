@@ -8,6 +8,7 @@ import { clickHandler, scrollhandler } from "/utils/eventHandler";
 import style from "../../styles/workDetail.module.css";
 import StyledLink from "../../components/styledLink";
 import classNames from "classnames";
+import Head from "next/head";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts/work");
@@ -57,6 +58,9 @@ export default function PostPage({ frontmatter, content }) {
 
   return (
     <>
+      <Head>
+        <title>{frontmatter.title}</title>
+      </Head>
       <div style={imgBackground} className={style.parallax} />
 
       <div className={style.shadow}>

@@ -4,6 +4,7 @@ import Marquee from "../components/marquee";
 import hero from "../styles/hero.module.css";
 import Card from "../components/Card";
 import work from "../styles/work.module.css";
+import Head from "next/head";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts/hobby");
@@ -17,26 +18,31 @@ export async function getStaticProps() {
 
 export default function HobbiesPage({ posts }) {
   return (
-    <div className={work.container}>
-      <h1>
-        <Marquee text="my hobbies ✶ my hobbies ✶ my hobbies ✶ my hobbies ✶ my hobbies ✶ my hobbies ✶ " />
-      </h1>
-      <div className={hero.margin}>
-        <div className={work.cards}>
-          {posts
-            .slice()
-            .reverse()
-            .map(({ slug, frontmatter }, index) => (
-              <Card
-                key={index}
-                slug={slug}
-                img={frontmatter.previewImg}
-                scope={frontmatter.type}
-                title={frontmatter.title}
-              />
-            ))}
+    <>
+      <Head>
+        <title>Hobbies</title>
+      </Head>
+      <div className={work.container}>
+        <h1>
+          <Marquee text="my hobbies ✶ my hobbies ✶ my hobbies ✶ my hobbies ✶ my hobbies ✶ my hobbies ✶ " />
+        </h1>
+        <div className={hero.margin}>
+          <div className={work.cards}>
+            {posts
+              .slice()
+              .reverse()
+              .map(({ slug, frontmatter }, index) => (
+                <Card
+                  key={index}
+                  slug={slug}
+                  img={frontmatter.previewImg}
+                  scope={frontmatter.type}
+                  title={frontmatter.title}
+                />
+              ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
