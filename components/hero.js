@@ -14,7 +14,7 @@ export default function Hero() {
             <h1>I make</h1>
           </AnimateFadeIn>
           <AnimateFadeIn delayInMilliseconds={100}>
-            <Marquee text="analytics dashboard ✶ mobile app ✶ company profile * " />
+            <Marquee text="analytics dashboard ✶ mobile app ✶ company profile ✶ " />
           </AnimateFadeIn>
           <AnimateFadeIn delayInMilliseconds={200}>
             <h1>that works</h1>
