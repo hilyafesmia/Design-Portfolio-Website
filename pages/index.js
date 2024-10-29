@@ -4,6 +4,7 @@ import Hero from "../components/hero";
 import WorkSection from "../components/workSection";
 import style from "../styles/Index.module.css";
 import Hobbies from "../components/hobbies";
+import Head from "next/head";
 
 export async function getStaticProps() {
   const workFiles = fs.readdirSync("posts/work");
@@ -22,10 +23,15 @@ export async function getStaticProps() {
 
 export default function Home({ works, hobbies }) {
   return (
-    <div className={style.home}>
-      <Hero />
-      <WorkSection posts={works} />
-      <Hobbies posts={hobbies} />
-    </div>
+    <>
+      <Head>
+        <title>Home</title>
+      </Head>
+      <div className={style.home}>
+        <Hero />
+        <WorkSection posts={works} />
+        <Hobbies posts={hobbies} />
+      </div>
+    </>
   );
 }

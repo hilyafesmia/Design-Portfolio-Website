@@ -1,12 +1,12 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Head from "next/head";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>Hilya&#39;s Product Design Portfolio</title>
         <meta name="description" content="Hilya's Product Design Portfolio" />
         <link rel="icon" href="/icon.svg" />
       </Head>
@@ -15,6 +15,7 @@ export default function Layout({ children }) {
         {children}
         <Footer />
       </main>
+      <GoogleAnalytics gaId="G-3X0Z63REYJ" />
     </>
   );
 }
