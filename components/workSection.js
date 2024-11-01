@@ -11,7 +11,7 @@ export default function WorkSection({ posts }) {
   const latestPost = posts[totalPost - 1];
   return (
     <SectionContainer position="middle">
-      <div className={hero.margin}>
+      <div className={hero.margin} id="works-section">
         <AnimateFadeIn>
           <div className={style.row}>
             <div className={style.title}>
