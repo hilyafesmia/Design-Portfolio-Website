@@ -14,7 +14,7 @@ export default function Hero() {
             <h1>I make</h1>
           </AnimateFadeIn>
           <AnimateFadeIn delayInMilliseconds={100}>
-            <Marquee text="analytics dashboard ✶ mobile app ✶ company profile ✶ " />
+            <Marquee text="analytics dashboard ✶ mobile app ✶ company profile" />
           </AnimateFadeIn>
           <AnimateFadeIn delayInMilliseconds={200}>
             <h1>that works</h1>
@@ -29,14 +29,16 @@ export default function Hero() {
         </AnimateFadeIn>
         <AnimateFadeIn delayInMilliseconds={500}>
           <div className={style.cta}>
-            <div className={style.spacingArrow}>
-              <h5>See My Works</h5>
-              <iframe
-                src="https://lottie.host/embed/a57508f4-16dd-4bdb-ab27-14915e46c881/R7nJRWpe0h.json"
-                width="64px"
-                height="64px"
-              ></iframe>
-            </div>
+            <a href={"#works-section"}>
+              <div className={style.spacingArrow}>
+                <h5>See My Works</h5>
+                <iframe
+                  src="https://lottie.host/embed/a57508f4-16dd-4bdb-ab27-14915e46c881/R7nJRWpe0h.json"
+                  width="64px"
+                  height="64px"
+                ></iframe>
+              </div>
+            </a>
             <div className={style.action}>
               <Button href="https://www.linkedin.com/in/hilyafesmia/">
                 LinkedIn
