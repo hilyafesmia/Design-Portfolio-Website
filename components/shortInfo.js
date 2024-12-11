@@ -1,6 +1,8 @@
+import style from "../styles/workDetail.module.css";
+
 export default function shortInfo({ type, content }) {
   return (
-    <div style={{ width: "160px" }}>
+    <div className={style.shortInfoContainer}>
       <h4>{type}</h4>
       <p>{content}</p>
     </div>

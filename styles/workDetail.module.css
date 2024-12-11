@@ -21,8 +21,8 @@
   gap: 0.5rem;
 }
 
-.shortinfo-item {
-  width: 160px;
+.shortInfoContainer {
+  width: 30%;
 }
 
 .contentList {
@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 200px;
+  width: 150px;
 
   border-right: 1px solid var(--gray-3);
 }
@@ -47,16 +47,16 @@
 .margin {
   width: 100%;
   min-height: 100vh;
-  max-width: 1920px;
+  max-width: 1200px;
   margin: auto;
-  padding: 0 200px;
 }
 
 .startPos {
   margin-top: -160px;
+  width: 100%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
   .shadow {
     padding: 0;
   }
@@ -87,5 +87,12 @@
     background-color: var(--gray-6);
     width: 100%;
     border-radius: 16px;
+  }
+
+  .shortinfos {
+    flex-direction: column;
+  }
+  .shortInfoContainer {
+    width: 100%;
   }
 }

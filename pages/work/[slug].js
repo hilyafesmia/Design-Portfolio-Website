@@ -54,6 +54,7 @@ export default function PostPage({ frontmatter, content }) {
     html: true,
   });
 
+  md.use(require("markdown-it-container"), "highlight");
   const textStyle = classNames(style.startPos, "prose");
 
   return (
@@ -62,23 +63,29 @@ export default function PostPage({ frontmatter, content }) {
         <title>{frontmatter.title}</title>
       </Head>
       <div style={imgBackground} className={style.parallax} />
-
       <div className={style.shadow}>
         <div className={style.margin}>
           <div className={style.contentList}>
             <p>Quick Access</p>
             <StyledLink href="#overview">Overview</StyledLink>
-            <StyledLink href="#process">Process</StyledLink>
+            <StyledLink href="#objective">Objective</StyledLink>
+            <StyledLink href="#design">Design</StyledLink>
             <StyledLink href="#result">Result</StyledLink>
           </div>
           <div className={textStyle}>
+            <p>
+              {frontmatter.company} • {frontmatter.scope} •{" "}
+              {frontmatter.duration}
+            </p>
             <h1>{frontmatter.title}</h1>
-            <h3>{frontmatter.desc}</h3>
+            <div
+              id="overview"
+              style={{ position: "relative", top: "-120px" }}
+            />
             <div className={style.shortinfos}>
-              <ShortInfo type={"Company"} content={frontmatter.company} />
-              <ShortInfo type={"Role"} content={frontmatter.role} />
-              <ShortInfo type={"Scope"} content={frontmatter.scope} />
-              <ShortInfo type={"Duration"} content={frontmatter.duration} />
+              <ShortInfo type={"What"} content={frontmatter.what} />
+              <ShortInfo type={"Why"} content={frontmatter.why} />
+              <ShortInfo type={"Impact"} content={frontmatter.impact} />
             </div>
             <div dangerouslySetInnerHTML={{ __html: md.render(content) }} />
           </div>

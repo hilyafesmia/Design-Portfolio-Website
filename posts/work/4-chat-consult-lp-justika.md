@@ -8,6 +8,9 @@ company: "Justika"
 role: "Product Designer"
 scope: "Desktop Web, Mobile Web"
 duration: "Jan 2022"
+what: "Improved the Sending Problem Description step in Justika's chat consultation process by addressing usability heuristic issues."
+why: "Low conversion rate at the Sending Problem Description step in the chatroom, caused by mismatched flows, cluttered design, and lack of help documentation."
+impact: "Increased the number of paying users (NPU) by 39% across all channels within five days of release."
 ---
 
 ## <a id="overview" style="position:relative;top:-200px"></a> Overview
@@ -78,11 +81,11 @@ The Sending Problem Description step conversion rate is better on the dedicated-
 
 Users who have a divorce or business-related problem tend to skim information because they either have no time or are too clouded to read carefully.
 
-### Research Questions
+### <a id="objective" style="position:relative;top:-120px"></a> Research Questions
 
 > How does the **level of first-time users understanding of Justika** affect the **_consultation flow_** and **_information needs_** in using the chat consultation service according to their needs?
 
-## Design
+## <a id="design" style="position:relative;top:-120px"></a> Design
 
 ### Mapping FAQ
 

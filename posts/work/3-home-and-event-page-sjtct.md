@@ -8,12 +8,17 @@ company: "SejutaCita"
 role: "Product Designer"
 scope: "Mobile App"
 duration: "Feb 2020"
+what: "Improved the Home and Event pages in SejutaCita's app by restructuring the information architecture and enhancing the discovery-to-register flow."
+why: "Many users dropped after reaching the Home or Event pages. Key issues included a lack of clear navigation, insufficient context about the app's offerings, and a design that did not cater to different user intentions."
+impact: "Event Card CTR improved by 3x on the Home and Event pages. Register Button CTR increased by 65% on the Detail Event page."
 ---
 
 ## <a id="overview" style="position:relative;top:-200px"></a> Overview
 
 SejutaCita is a ticketing platform that allows students to create, share, and attend educational events to enrich their CVs. The events range from webinars, competitions, classes, scholarships, and more.
+
 In this project, we focused on the Register to Event flow. The main goal is to restructure the information architecture in the app to improve the overall discovery-to-register flow.
+
 As a result, the **Event Card CTR improved 3x** and the **Register Button CTR improved by 65%**.
 
 ### Users & Audience
@@ -99,7 +104,7 @@ However, the number of users who reached the Event page decreased. We assumed th
 
 ## Third Iteration
 
-### Design
+### <a id="design" style="position:relative;top:-120px"></a> Design
 
 ![ThirdIter](/images/SejutaCita/ThirdIter.jpg "ThirdIter")
 

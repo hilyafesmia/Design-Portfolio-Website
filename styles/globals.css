@@ -58,6 +58,7 @@ h4 {
 }
 
 h5,
+h6,
 p {
   font-family: "SFPro", serif;
   color: var(--gray-1);
@@ -65,6 +66,14 @@ p {
 
 h5 {
   font-size: 28px;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: -1rem;
+  margin-top: 4rem;
 }
 
 p {
@@ -83,6 +92,39 @@ p {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #101010;
+}
+
+.highlight {
+  background-color: #e4f8f5;
+  /* width: 100vw; */
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.highlight > h6 {
+  margin-top: 0;
+}
+
+.highlight > h2 {
+  margin-top: 2rem;
+}
+
+.highlight > p {
+  margin-bottom: 0;
+}
+
+.activeImg::after {
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(255, 255, 255, 0.9);
+  z-index: 1;
 }
 
 @media only screen and (max-width: 900px) {
