@@ -59,8 +59,8 @@ export default function Header() {
           <StyledLink href="/about">About</StyledLink>
           <StyledLink href="/works">Works</StyledLink>
           <StyledLink href="/hobbies">Hobbies</StyledLink>
-          <Button small href="mailto:hilyafesmia@gmail.com">
-            Contact Me
+          <Button small href="/Resume-Hilya-Auli-Fesmia-2024.pdf">
+            See Resume
           </Button>
         </div>
       </div>
@@ -103,8 +103,8 @@ export default function Header() {
           </Link>
         </div>
 
-        <Button inverted href="mailto:hilyafesmia@gmail.com">
-          Contact Me
+        <Button inverted href="/Resume-Hilya-Auli-Fesmia-2024.pdf">
+          See Resume
         </Button>
       </div>
     </nav>

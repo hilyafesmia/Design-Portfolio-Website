@@ -23,6 +23,10 @@ module.exports = {
               position: "relative",
               cursor: "zoom-in",
               transition: "all 0.5s ease",
+              borderRadius: "1rem",
+            },
+            th: {
+              fontSize: "18px",
             },
           },
         },

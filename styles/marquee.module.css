@@ -14,7 +14,7 @@
 
 .marquee span {
   padding: 0 8px;
-  animation: marquee 15s infinite linear;
+  animation: marquee 10s infinite linear;
 }
 
 @keyframes marquee {

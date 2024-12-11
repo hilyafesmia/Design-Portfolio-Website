@@ -8,6 +8,9 @@ company: "Ristek Fasilkom UI 2019"
 role: "Product Designer"
 scope: "Desktop Web, Mobile Web"
 duration: "Aug 2019"
+what: "Redesigned SusunJadwal, an academic scheduling platform, to make it more relevant to students' current needs."
+why: "Despite an initially positive reception, students stopped using SusunJadwal after a few semesters. Key issues included a lack of critical features, limited scheduling flexibility, and poor awareness of existing functionalities like plan repositories."
+impact: "The redesign improved user engagement, leading to an all-time high in the number of schedules created during the plan-prep period. It also broadened SusunJadwal’s reach, attracting students from other faculties."
 ---
 
 ## <a id="overview" style="position:relative;top:-200px"></a> Overview
@@ -24,7 +27,7 @@ Recurring users, Universitas Indonesia active students
 
 Product Designer. This group project consisted of two other product designers, six engineers, and me.
 
-## Problem Statement
+## <a id="objective" style="position:relative;top:-120px"></a> Problem Statement
 
 Academic registration is an activity where students choose classes they will take next semester. When planning their classes, students always have their considerations, including but not limited to taking the same classes as their peer group or avoiding morning classes at all costs. Because of this, students began to devise ways to prepare their class plans.
 
@@ -84,7 +87,7 @@ Ristek Fasilkom UI 2019’s primary color is turquoise. Hence, a turquoise color
 
 After the brainstorming session, we created the app's wireframes to show our solutions' general layouts.
 
-### High-fidelity designs
+### <a id="design" style="position:relative;top:-120px"></a> High-fidelity designs
 
 #### Daftar Jadwal
 

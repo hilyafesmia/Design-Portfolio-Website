@@ -1,6 +1,6 @@
 ---
-title: "Partial Pickup Improvement"
-metaTitle: "Partial Pickup Improvement"
+title: "Improving the way drivers pick up and record deliveries"
+metaTitle: "Improving the way drivers pick up and record deliveries"
 desc: "Based on Marketplace Ops’s record, there were many disputes about the quantity of returned items to Seller every month. Hence, to eliminate data discrepancies, we decided to improve the pickup and return flow of the Driver App."
 metaDesc: ""
 previewImg: "images/GudangAda/Cover.jpg"
@@ -8,115 +8,103 @@ company: "GudangAda"
 role: "Product Designer"
 scope: "Mobile App, Mobile Web"
 duration: "Jan 2023"
+what: "Improved the pickup and return flow in GudangAda’s Driver App to reduce discrepancies in the recorded quantity of returned items."
+why: "Frequent discrepancies between recorded and actual data. Key issues included reliance on printed documents, ignoring app-based priorities, and manual entry errors."
+impact: "Enhance drivers' adherence to the system’s item prioritization. Though testing was postponed due to restructuring, the solution was aimed to reduce the monthly disputes by 50%."
 ---
 
-## <a id="overview" style="position:relative;top:-200px"></a> Overview
+###### My Role
 
-GudangAda is an Indonesian-based B2B e-commerce platform that connects small and medium-sized businesses to suppliers and helps with logistics and financing.
+## Design Research & Ideation
 
-In this project, we focused on the pickup and return phase in the delivery process. The main goal of this project is to eliminate disputes between the recorded and the actual number of stock returned to the Seller.
+I planned and executed the design research for this project, conducting user interviews, analyzing the findings, and identifying key opportunity areas and solutions. I collaborated with the Product Manager and Logistics Ops representative to prioritize these ideas effectively.
 
-### Users and Audience
+## Coordination with Cross-Functional Team
 
-- **Sellers**:
-  - Marketplace (MP) Sellers: These Sellers have existing offline stores and register with the GudangAda Marketplace app to expand their reach with an online storefront.
-  - Toko GudangAda (TGA) Sellers: These online-only stores are owned and operated by GudangAda, offering products exclusively through the Marketplace platform.
-- **Drivers**: They deliver items from Sellers to Buyers through GudangAda's logistics network.
+I worked closely with the Product Manager and Operations team to ensure that the design aligned with logistical requirements and feasibility.
 
-### Roles and Responsibilities
+## Prototyping & Testing
 
-Product Designer. My workflow includes creating a research plan, user interviews, and UI design. This project also involves tight collaboration between the Product Manager and Operational Staff.
+I developed the prototype from low to high fidelity, with plans to refine it based on user feedback. Additionally, I collaborated closely with engineers to ensure feasibility and make necessary adjustments throughout the process.
 
-## Problem Statement
+###### Background
 
-GudangAda currently relies on printed documents to track delivered and returned items. Following delivery, the Buyer confirms receipt, the Seller acknowledges the return items and Gross Merchandise Value (GMV), and then the Driver manually inputs this information into the GudangAda Driver App. However, this reliance on manual data entry generates problems:
+## GudangAda launched a Driver App designed to track drivers and their deliveries while assisting them with navigation along their delivery routes.
 
-**_There were over 20 disputes about the quantity of returned items every month. The number of items the Seller received differs from the Driver's reported number. A dispute can take days to resolve and require significant human resources as multiple actors can be affected by this problem._**
+The Driver App enables drivers to monitor their attendance, view their list of delivery tasks for the day—complete with location details and contact numbers for each buyer and seller—and log each completed delivery throughout the day.
 
-We assumed that there could be a miss-input by the Driver when transferring information from the document to our app. No one was there to correct them because
+![A video advertising Driver App to potential logistics partner](/images/GudangAda/DriverAppPromo.png "A video advertising Driver App to potential logistics partner")
 
-- Sellers primarily reference the signed physical documents, often overlooking in-app data.
-- Ops cannot monitor individual Driver data entry closely.
+<figcaption style="text-align:center">A video advertising Driver App to potential logistics partner</figcaption>
 
-This problem was only discovered after the Seller complained to Marketplace Ops.
+## Return Task: if a buyer chooses not to accept their delivery, the order will be sent back to the seller
 
-From that assumption, we tried to fix this by finding out what kind of interaction we needed to provide between Seller and Driver so that both would make sure that the reported number was correct.
+GudangAda currently relies on printed documents to track delivered and returned items. Drivers record return quantities manually in the Driver App based on physical documents signed by sellers and buyers.
 
-## <a id="process" style="position:relative;top:-200px"></a> Process Summary
+## Partial Pickup: when a seller lacks the full quantity of items needed for delivery
 
-![Flow](/images/GudangAda/Flow.jpg "Flow")
+The Driver App system will automatically reallocate items to prioritize certain buyers in cases of a partial pickup by the seller (e.g. when only 8 boxes of milk are available instead of the 10 ordered). Both the driver and seller are required to adhere to this automated allocation.
 
-## Research
+::: highlight
 
-> How might we eliminate discrepancies between the reported and the actual number of items returned?
+###### <a id="objective" style="position:relative;top:-120px"></a> Project Objective
 
-### **Have a chat with the Logistics Ops Team**
+## Eliminate discrepancies between the recorded and actual number of items returned.
 
-Since this problem involves Logistics Ops the most, we decided to learn more about the disputes, how and why they happened, and what they are currently doing to fix this problem.
+We noticed over 20 disputes monthly due to discrepancies between recorded and actual return quantities, requiring intensive time and human resources to resolve. We hypothesized that there could be a miss-input by the Driver when transferring information from the document to our app.
+:::
 
-**Key Finding(s)**
+###### User Research
 
-- There are several disputes caused by the Driver inputting incorrectly. However, most disputes come from the Driver ignoring the system's item prioritization during Partial Pickup, leading to discrepancies between delivered and recorded quantities.
-  - Partial Pickup: The system automatically adjusts item allocation to prioritize specific Buyers when Sellers provide incomplete orders (e.g., 8 boxes of milk instead of 10).
-- Logistics Ops compares signed document photos with database entries to identify discrepancies. If discrepancies exist, Ops manually adjusts the database to match the signed documents.
+## I initiated a discussion with the Logistics Operations team to learn more about the disputes
 
-### **Prioritizing**
+Since this problem involves Logistics Ops the most, I decided to learn more about the disputes, how and why they happened, and what they are currently doing to fix this problem.
 
-Our initial assumption was not spot on. While miss-input played a role, interviews revealed many discrepancies from Drivers ignoring the system's item prioritization during Partial Pickup. To address these findings effectively, we've divided the project into two iterations:
+- There are several disputes caused by the Driver inputting incorrectly.
+- Most disputes come from the Driver ignoring the system's item prioritization during Partial Pickup, leading to discrepancies between delivered and recorded quantities.
 
-- **First Iteration**: Ensure Drivers consistently follow the intended item prioritization made by the system. We will call this Partial Pickup Improvement project.
-- **Second Iteration**: Minimize data entry errors in return processes. We will call this Return Task Improvement project.
+## I conducted field visits to observe and shadow sellers and drivers in their daily routines
 
-## Partial Pickup Improvement
+To gain in-depth insights into the pickup and return process, I conducted field visits with the Product Manager to 2 types of sellers: TGA sellers and MP sellers. During these visits, we observed the process firsthand and interviewed the sellers and the drivers assigned to their stores.
 
-### Research
-
-> How might we help Drivers to adhere to the intended item prioritization made by the system?
-
-#### **Seller and Driver visit**
-
-To gain in-depth insights into the pickup and return process, we conducted field visits to two types of Sellers: TGA Sellers and MP Sellers. During these visits, we observed the process firsthand and interviewed the Sellers and the Drivers assigned to their stores.
-
-**Key Finding(s)**
-
-- Drivers and Sellers consistently referred to the printed Surat Jalan document as their primary reference for stock checking and pickup, bypassing the intended Pick List.
-  - Surat Jalan: A document that serves as proof of delivery for the Buyers.
-  - Pick List: A document that lists down the specific items the Sellers need to pick and their respective quantities.
-- Sellers organize items by Buyer store for LIFO loading (last in, first out) to align with Drivers' preferences. The Pick List's lack of store-based grouping made them use Surat Jalan instead.
-- During Partial Pickup, Sellers strike through the listed items on the Surat Jalan and writing in the correct quantities. This handwritten modification then serves as confirmation for the Buyer, who then signs the document.
-- Drivers prefer printed documents over digital interfaces. This leads to sole dependence on Surat Jalan and, thus, a lack of awareness regarding system-generated reprioritization during Partial Pickup.
-- Drivers often deviate from system-generated delivery routes, relying on Surat Jalan for Buyer addresses because they believe they have more efficient routes.
+| Drivers don’t feel the need to use the Driver App other than to input delivery                                                             | The existing Pick List document lacked the necessary store-based grouping log                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Drivers don’t follow the system-generated delivery routes because they believe they know more efficient routes.                            | Sellers need store-based grouping because they organize items by buyer store for LIFO loading (last in, first out) to align with drivers' preferences. |
+| Since drivers don’t need the app to navigate around, they just use the address stated in the printed Surat Jalan.                          | Because of point a, drivers and sellers relied on printed Surat Jalan documents rather than in-app Pick List for accuracy checks.                      |
+| Sole dependence on printed Surat Jalan causes drivers to lack awareness regarding system-generated reprioritization during Partial Pickup. |                                                                                                                                                        |
 
 **Below is the simplified graphic of the problem based on what we know from Logistics Ops, Sellers and Drivers**
 
 ![Seller and Driver Behavior](/images/GudangAda/SellerDriverBehavior.jpg "Seller and Driver Behavior")
 
-### Design
+::: highlight
 
-Based on the findings, we would focus on these 2 key areas:
+###### Strategy
 
-- **Seller**: Enabling Seller to prepare the items efficiently
-- **Driver**: Increase Driver’s adherence to the system’s item prioritization
+## Ensure drivers consistently follow the intended item prioritization made by the system.
 
-#### Seller-facing
+Our initial assumption was not spot on. While miss-input played a role, research revealed many discrepancies from drivers ignoring the system's item prioritization during Partial Pickup. To address these findings effectively, I’ve divided the project into 2 iterations:
 
-**Item grouping by Buyer Store**
+- Partial Pickup Improvement: Ensure drivers consistently follow the intended item prioritization made by the system.
+- Return Task Improvement: Minimize data entry errors in return processes (to be developed in a subsequent project phase).
+
+:::
+
+###### <a id="design" style="position:relative;top:-120px"></a> Ideation and Concepting
+
+## Enabling seller to prepare the items efficiently
 
 ![Existing Pick List](/images/GudangAda/ExistingPicklist.jpg "Existing Pick List")
 
-Sellers only had a flat list of all items to pick up. Now, the digital Pick List also displays items grouped by the Buyer after the reprioritization, eliminating the need for the Surat Jalan because the Pick List has what Surat Jalan offers as well.
+The digital Pick List is now grouped by buyer stores, replacing the need for printed documents during pickup preparation.
 
 ![Revised Pick List](/images/GudangAda/RevisedPicklist.jpg "Revised Pick List")
 
-#### Driver-facing
-
-**Download Document Page**
+## Increase driver’s adherence to the system’s item prioritization
 
 ![Download Document Page](/images/GudangAda/DownloadDocumentPage.jpg "Download Document Page")
 
-To prevent Drivers from relying solely on Surat Jalan documents for pickup, we've disabled the ability to download them before the reprioritization. This drives them to use the Driver App, at least until the item verification and reprioritization is done. If they really need printed document, we still provide them with a printable Pick List.
-
-**Pickup Process**
+To prevent Drivers from relying solely on Surat Jalan documents for pickup, I’ve disabled the ability to download them before the reprioritization. This drives them to use the Driver App, at least until the item verification and reprioritization is done. If they need printed documents, we still provide them with a printable Pick List.
 
 ![Existing Design](/images/GudangAda/BeforePrintSJ.jpg "Existing Design")
 
@@ -124,22 +112,39 @@ Instead of printing beforehand, Drivers will now print the Surat Jalan directly 
 
 ![Print Surat Jalan Step](/images/GudangAda/PrintSJStep.jpg "Print Surat Jalan Step")
 
-We've also redesigned the Surat Jalan layout to include the actual number of items picked up, not just the initial order quantity, eliminating the need to strike though manually.
+I’ve also redesigned the Surat Jalan layout to include the actual number of items picked up, not just the initial order quantity, eliminating the need to strike though manually.
 
 ![Surat Jalan Document](/images/GudangAda/SJDocument.jpg "Surat Jalan Document")
 
-### Testing
+###### Usability Testing
 
-Following organization restructuring, we could not proceed with the planned testing and second phase of the project (Return Task Improvement). However, we'd like to share our planned approach for testing.
+## Making sure the design is practical for the drivers and sellers
 
-We would conduct a concept test to identify user feedback on the Partial Pickup Improvement concept and to understand its potential for resolving Partial Pickup issues and its usability in improving the item preparation process. We would select one TGA seller and two MP Sellers (along with the Drivers assigned for each store) who have experienced data discrepancies due to Partial Pickup.
+I pushed for usability testing. Unfortunately, due to organizational restructuring, I could not conduct these tests. However, the intended testing plan included:
 
-## <a id="result" style="position:relative;top:-200px"></a> Personal Takeaways
+### A concept test to identify user feedback on the Partial Pickup Improvement concept and to understand 1) its potential for resolving Partial Pickup issues and 2) its usability in improving the item preparation process.
 
-### Designing for Drivers
+| Participant                                                   | Criteria                                                  |
+| ------------------------------------------------------------- | --------------------------------------------------------- |
+| 1 TGA Seller (along with the Drivers assigned for each store) | have experienced data discrepancies due to Partial Pickup |
+| 2 MP Seller (along with the Drivers assigned for each store)  | have experienced data discrepancies due to Partial Pickup |
 
-The thing about designing for GudangAda's Drivers is that we often assume things based on what we know, which in most cases are drivers near us: online motorbike/taxi drivers. However, although they are both categorized as drivers, we can't just assume that their workload and behavior are the same.
+::: highlight
 
-As we followed the Drivers doing their jobs, this assumption about our Drivers' workflow proved incomplete and misleading. Through the visit, we observed that they face a unique challenge: Their work is physically challenging and borderline dangerous (for their phones). They load and unload heavy items in various locations, making phone use impractical and risky. We now understand why they prefer looking at the printed document instead of the Driver App.
+###### <a id="result" style="position:relative;top:-120px"></a> Impact
 
-However, we need them to understand that, especially during Partial Pickup, they must follow the reprioritization done by the system which is only updated on the app. Bridging this online-to-offline behavior is the challenge we really hoped we could solve. This project shows the importance of going beyond assumptions and actively try to understand user context to create a balance between meeting the tech expectations and also benefiting the users.
+## A more practical pickup process. Followed consistently by both drivers and sellers.
+
+Although further testing was postponed, the solution aimed to streamline the pickup process, increase adherence to system prioritization, and thus reduce disputes by 50%.
+
+:::
+
+###### Personal Takeaways
+
+## Designing for (truck) drivers with their unique workflow
+
+Designing for GudangAda’s Drivers presents unique challenges because we often rely on assumptions shaped by our familiarity with local drivers, such as motorbike or taxi drivers. While both groups fall under the "driver" category, their tasks and work behaviors differ significantly.
+
+When we shadowed GudangAda’s Drivers, the general assumptions about their workflow turned out to be incomplete and somewhat misleading. Our observations revealed distinct challenges they face daily: their work is physically demanding, often involving heavy lifting in various locations, which makes frequent phone use not only impractical but also risky for their devices. This insight explains their preference for using printed documents over the Driver App.
+
+However, they must follow the system’s real-time updates, particularly during a Partial Pickup, where the app reprioritizes items. Bridging this online-to-offline behavior is the challenge we really hoped to solve. This project highlighted the importance of moving beyond assumptions to gain a deeper understanding of the user’s context, allowing us to better balance tech-driven solutions with real user needs.

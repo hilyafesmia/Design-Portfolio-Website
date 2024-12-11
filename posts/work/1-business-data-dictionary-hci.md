@@ -8,6 +8,9 @@ company: "HomeCredit Indonesia"
 role: "Product Designer, Front-end Developer"
 scope: "Desktop Web"
 duration: "Feb 2019"
+what: "Created a centralized business data dictionary to improve data accessibility and collaboration among stakeholders."
+why: "The existing data warehouse system was inefficient for collaborative work. This resulted in slower analysis progress and limited use of the data warehouse."
+impact: "Streamlined communication by replacing physical meetings with digital features like comments and request changes."
 ---
 
 ## <a id="overview" style="position:relative;top:-200px"></a> Overview
@@ -23,7 +26,7 @@ Business Intelligence, Data Analyst, and Data Engineer.
 
 Product Designer and Front-end Web Developer. We are working in a group of 6: 3 other engineers, 1 PM and me. My workflow includes creating a research plan, user interview, UI design, testing, and UI development using React Redux.
 
-## Problem Statement
+## <a id="objective" style="position:relative;top:-120px"></a> Problem Statement
 
 A data warehouse is an extensive collection of data from an operational database to help organizations analyze data and make decisions. It’s designed for query and analysis purposes. It is the best way to keep data accessible from your fingertip, but it’s not the best setting for mutability and collaborative work because;
 
@@ -63,7 +66,7 @@ We then tried to get further to understand our users better by interviewing them
 - A meeting is needed to make changes to a data definition. It consists of the person who requested a change, a data engineer, and a department representative whose data definition is to be changed. It can last for hours and doesn’t always result in a solution; sometimes, a second meeting is expected.
 - Analysts don’t rely on the data warehouse because it’s not regularly updated due to the limitations above
 
-## Design
+## <a id="design" style="position:relative;top:-120px"></a> Design
 
 ### Branding
 
