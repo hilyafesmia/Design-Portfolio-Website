@@ -11,7 +11,7 @@ export default function Footer() {
       <div className={hero.margin}>
         <AnimateFadeIn>
           <h1>
-            Hire a Designer <br /> Who Gets Results
+            Hire a Versatile Designer <br /> For Your Team
           </h1>
         </AnimateFadeIn>
         <AnimateFadeIn>
@@ -78,12 +78,12 @@ export default function Footer() {
         <AnimateFadeIn>
           <StyledLink
             inverted
-            href="https://github.com/hilyafesmia/portfolio/tree/new-ui"
+            href="https://github.com/hilyafesmia/portfolio/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <p style={{ textAlign: "center" }}>
-              Made with love, blood, and tears. (2024)
+              Made with love, blood, and tears. (quite literally)
             </p>
           </StyledLink>
         </AnimateFadeIn>
