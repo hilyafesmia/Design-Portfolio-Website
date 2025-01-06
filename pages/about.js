@@ -81,7 +81,34 @@ export default function AboutPage() {
                 />
                 <div>
                   <h4>Irsyadila Chuelita</h4>
-                  <p>Irsya managed me directly at Justika</p>
+                  <p>Irsya managed me directly</p>
+                </div>
+              </div>
+            </div>
+            <div className={style.review}>
+              <i>
+                “Hilya gave me a lot of surprises during our time working
+                together. Start from her detailed question regarding every
+                project she was assigned, her willingness to learn more about
+                data and research, her fun character, the way she always crave
+                for feedbacks, to her ability to create a hifi prototype in a
+                short time. All of those things helped me, a Product Manager, a
+                lot and made me feel confident about every project we were
+                working on. I definitely recommend Hilya to anyone who is
+                looking for a product designer.“
+              </i>
+
+              <div className={style.profile}>
+                <Image
+                  className={style.reviewer}
+                  alt="Ajie's profile picture"
+                  src={"/images/ajie.jpeg"}
+                  width={64}
+                  height={64}
+                />
+                <div>
+                  <h4>Ajie Fachrizal</h4>
+                  <p>Ajie worked with me as a Product Manager</p>
                 </div>
               </div>
             </div>

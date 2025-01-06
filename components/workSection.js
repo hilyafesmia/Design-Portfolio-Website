@@ -37,7 +37,7 @@ export default function WorkSection({ posts }) {
         <AnimateFadeIn>
           <div className={style.catalog}>
             {posts
-              .slice(0, totalPost - 1)
+              .slice(totalPost - 3, totalPost - 1)
               .reverse()
               .map(({ slug, frontmatter }, index) => {
                 return (

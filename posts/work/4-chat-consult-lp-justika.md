@@ -1,6 +1,6 @@
 ---
-title: "Chat Consultation Landing Page"
-metaTitle: "Chat Consultation Landing Page"
+title: "Reducing the frictions to start a legal consultation"
+metaTitle: "Reducing the frictions to start a legal consultation"
 desc: "Based on Justika's website analytics, the Sending Problem Description step in the chatroom has the lowest conversion rate in the whole chat consultation process. To fix this, we decided to incorporate usability heuristic aspects in the chatroom."
 metaDesc: "Based on Justika's website analytics, the Sending Problem Description step in the chatroom has the lowest conversion rate in the whole chat consultation process. To fix this, we decided to incorporate usability heuristic aspects in the chatroom."
 previewImg: "images/Justika/Cover.jpg"
