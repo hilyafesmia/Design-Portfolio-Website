@@ -1,6 +1,6 @@
 ---
-title: "SusunJadwal"
-metaTitle: "SusunJadwal"
+title: "Empowering course planning for university students"
+metaTitle: "Empowering course planning for university students"
 desc: "Academic registration is an activity where students choose courses they will take next semester. SusunJadwal was made back in 2015 to help students plan their courses. However, the system has not been widely used by people because it lacks several functionalities that students often need when planning their studies."
 metaDesc: "Academic registration is an activity where students choose courses they will take next semester. SusunJadwal was made back in 2015 to help students plan their courses. However, the system has not been widely used by people because it lacks several functionalities that students often need when planning their studies."
 previewImg: "images/SusunJadwal/Cover.jpg"

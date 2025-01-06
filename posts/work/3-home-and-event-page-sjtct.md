@@ -1,5 +1,5 @@
 ---
-title: "Home and Event Page"
+title: "Connecting students to opportunities through an optimized Discovery flow"
 metaTitle: "Home and Event Page"
 desc: "Based on the data, SejutaCita users always stopped after either reaching the Home or Event page and didn’t continue to register for the event. To fix this, we decided to improved said pages"
 metaDesc: "Based on the data, SejutaCita users always stopped after either reaching the Home or Event page and didn’t continue to register for the event. To fix this, we decided to improved said pages"
@@ -7,7 +7,7 @@ previewImg: images/SejutaCita/Cover.jpg
 company: "SejutaCita"
 role: "Product Designer"
 scope: "Mobile App"
-duration: "Feb 2020"
+duration: "Feb 2021"
 what: "Improved the Home and Event pages in SejutaCita's app by restructuring the information architecture and enhancing the discovery-to-register flow."
 why: "Many users dropped after reaching the Home or Event pages. Key issues included a lack of clear navigation, insufficient context about the app's offerings, and a design that did not cater to different user intentions."
 impact: "Event Card CTR improved by 3x on the Home and Event pages. Register Button CTR increased by 65% on the Detail Event page."
